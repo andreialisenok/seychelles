@@ -1,11 +1,12 @@
-
 import '../scss/style.scss';
-// import switchThemeColor from './localstaradge.js';
-// switchThemeColor();
 
-// const btn = document.querySelector('.btn');
-// if (btn) {
-//   btn.addEventListener('click', () => {
-//     console.log('click');
-//   });
-// }
+const burger = document.querySelector('.burger');
+burger.addEventListener('click', () => {});
+
+const inputVal = document.querySelectorAll('.inputVal');
+inputVal.forEach((input) => {
+  input.addEventListener('input', (e) => {
+    console.log(e.target.value);
+    console.log(e);
+  });
+});

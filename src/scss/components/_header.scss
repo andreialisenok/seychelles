@@ -22,17 +22,30 @@
 }
 .logo {
   display: flex;
+  align-items: center;
   cursor: pointer;
   gap: 16px;
+  text-decoration: none;
+  position: relative;
+  max-width: 200px;
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    left: 45px;
+    background: $button-bg-color;
+  }
   img {
     width: 37px;
     height: 28px;
   }
   span {
-    font-family: 'Spectral SC', serif;
+    font-family: $spectral;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
+    color: $main-text-color;
   }
 }
 .nav {
@@ -51,6 +64,22 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
+  position: relative;
+  span {
+    font-family: $montserrat;
+    font-weight: 600;
+    font-size: 12px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: $red-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+  }
 }
 .burger {
   display: flex;

@@ -1,10 +1,9 @@
-:root {
-  --main-color: #1e1e20;
-  --second-color: #161618;
-  --mute-color: #313136;
-  --main-text-color: #fff;
-  --second-text-color: rgba(235, 235, 245, 0.6);
-  --hero-name-background: linear-gradient(120deg, #bd34fe 30%, #41d1ff);
-  --brand-color: #646cff;
-  --brand-light-color: #747bff;
-}
+// font-family
+$montserrat: 'Montserrat', sans-serif;
+$spectral: 'Spectral SC', serif;
+// colors
+
+$main-bg-color: #0b363f;
+$button-bg-color: #008085;
+$main-text-color: #fff;
+$red-color: #ff3b30;
