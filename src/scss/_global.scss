@@ -4,11 +4,10 @@ body {
   font-family: $montserrat;
   line-height: 1.4;
   background: linear-gradient(to left, #0b363f 0%, #0b4652 85%, #0f4550 100%);
-  color: var(--main-text-color);
+  color: #fff;
   font-size: 16px;
   transition: background 0.2s ease, color 0.2s ease;
 }
-
 .wrapper {
   //   min-height: 100vh;
   //   text-align: center;
@@ -20,33 +19,4 @@ body {
   max-width: 1480px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-.dark {
-  color-scheme: dark;
-}
-
-.title {
-  font-size: 4rem;
-
-  span {
-    font-size: 5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    @include text-gradient;
-  }
-}
-
-.footer {
-  padding: 3rem 0;
-  font-size: 1.6rem;
-
-  a {
-    text-decoration: none;
-    color: var(--brand-color);
-    transition: 0.2s ease;
-    &:hover {
-      color: var(--brand-light-color);
-    }
-  }
 }

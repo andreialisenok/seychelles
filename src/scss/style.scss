@@ -1,8 +1,9 @@
 @import 'fonts';
-@import 'reset';
+@import 'normalize';
 @import 'vars';
 @import 'mixins';
 @import 'global';
 @import 'main';
 @import './components/header';
+@import './components/promo';
 @import './components/footer';
