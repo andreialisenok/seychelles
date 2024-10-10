@@ -1,0 +1,83 @@
+.hotels {
+  padding: 32px 0;
+  &__img {
+    border-radius: 8px;
+    overflow: hidden;
+    height: 300px;
+    margin-bottom: 24px;
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 16px;
+    h2 {
+      font-family: $montserrat;
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0;
+    }
+    span {
+    }
+  }
+  &__body {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  &__text {
+    font-family: $montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+  }
+  &__location {
+    font-family: $montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+  }
+  &__beach {
+    font-family: $montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+  }
+  &__building {
+    font-family: $montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+  }
+}
+.swiper-hotels {
+  overflow: visible;
+  margin-bottom: 50px;
+  .swiper-slide {
+    opacity: 0.2;
+  }
+  .swiper-slide-active {
+    opacity: 1;
+  }
+}

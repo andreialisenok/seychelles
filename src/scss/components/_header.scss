@@ -1,6 +1,8 @@
 .header {
-  background: rgba(255, 255, 255, 0.05);
   padding: 12px 0;
+  @include viewport-md {
+    background: rgba(255, 255, 255, 0.05);
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -80,6 +82,7 @@
     position: absolute;
     top: -5px;
     right: -5px;
+    color: #fff;
   }
 }
 .burger {
