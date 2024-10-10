@@ -30,9 +30,12 @@ const swiperReviews = new Swiper('.swiper-reviews', {
   loop: true,
 });
 const swiperHotels = new Swiper('.swiper-hotels', {
-  slidesPerView: 1.2,
+  slidesPerView: 1.5,
+  // centeredSlides: true,
+  // loopedSlides: 7,
   spaceBetween: 40,
   loop: true,
+  watchSlidesProgress: true,
 });
 
 // accordion

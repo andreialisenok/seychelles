@@ -1,10 +1,20 @@
+@mixin viewport-sm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
 @mixin viewport-md {
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     @content;
   }
 }
 @mixin viewport-lg {
-  @media (min-width: 1280px) {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+@mixin viewport-xl {
+  @media (min-width: 1200px) {
     @content;
   }
 }
