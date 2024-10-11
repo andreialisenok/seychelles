@@ -1,5 +1,8 @@
 .accordion {
   padding: 32px 0;
+  @include viewport-xl {
+    padding: 60px 0px;
+  }
   &__list {
     padding: 0;
     margin: 0;
@@ -20,6 +23,9 @@
       border-top-right-radius: 8px;
       background: transparent;
       transition: background 200ms linear;
+      @include viewport-xl {
+        padding: 24px;
+      }
       &[aria-expanded='true'] {
         background: #145260;
         & ~ .accordion__content {
@@ -64,6 +70,9 @@
       font-weight: 300;
       margin: 0;
       padding: 8px 16px 16px 16px;
+      @include viewport-xl {
+        padding: 0 24px 24px 24px;
+      }
     }
   }
 }

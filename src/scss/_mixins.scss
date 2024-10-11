@@ -18,6 +18,11 @@
     @content;
   }
 }
+@mixin viewport-xxl {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
 @mixin text-gradient {
   background: var(--hero-name-background);
   background-clip: text;

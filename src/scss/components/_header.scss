@@ -5,12 +5,31 @@
   }
   &__inner {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 }
 .menudesktop {
   display: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 50px;
+  @include viewport-xl {
+    display: flex;
+  }
+  &__item {
+    list-style: none;
+  }
+  &__link {
+    font-family: $montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    @include viewport-xxl {
+      font-size: 20px;
+    }
+  }
 }
 .phone-mob {
   display: flex;
@@ -21,6 +40,9 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
+  @include viewport-xl {
+    display: none;
+  }
 }
 .logo {
   display: flex;
@@ -30,6 +52,10 @@
   text-decoration: none;
   position: relative;
   max-width: 200px;
+  margin-left: 35px;
+  @include viewport-xl {
+    margin-left: 0;
+  }
   &::before {
     content: '';
     position: absolute;
@@ -55,6 +81,14 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+  margin-left: auto;
+  &__call {
+    display: none;
+    @include viewport-xl {
+      display: flex;
+      width: 220px;
+    }
+  }
 }
 
 .basket {
@@ -67,6 +101,7 @@
   height: 24px;
   cursor: pointer;
   position: relative;
+  padding: 0;
   span {
     font-family: $montserrat;
     font-weight: 600;
@@ -85,6 +120,17 @@
     color: #fff;
   }
 }
+.phone-desktop {
+  font-family: $montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  display: none;
+  @include viewport-xl {
+    display: block;
+  }
+}
 .burger {
   display: flex;
   align-items: center;
@@ -97,6 +143,9 @@
   display: flex;
   padding: 5px 3px;
   cursor: pointer;
+  @include viewport-xl {
+    display: none;
+  }
   span {
     display: block;
     width: 100%;

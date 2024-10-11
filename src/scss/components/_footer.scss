@@ -1,6 +1,10 @@
 .footer {
   padding: 30px 0;
   border-top: 1px solid #154c57;
+  @include viewport-xl {
+    padding: 0px;
+    border: 0;
+  }
   &__inner {
     display: flex;
     flex-direction: column;
@@ -16,6 +20,8 @@
         'payment payment . copyright';
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 40px;
+      padding: 60px 0px;
+      border-top: 1px solid #154c57;
     }
   }
   &__col {
@@ -97,6 +103,9 @@
       color: #fff;
       &:first-child {
         color: #008085;
+      }
+      &:last-child {
+        font-weight: 400;
       }
     }
   }

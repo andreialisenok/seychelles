@@ -1,5 +1,8 @@
 .reviews {
   padding: 32px 0;
+  @include viewport-xl {
+    padding: 60px 0;
+  }
   &__inner {
   }
   &__slide {
@@ -10,6 +13,9 @@
     height: auto;
     display: flex;
     flex-direction: column;
+    @include viewport-xl {
+      min-height: 560px;
+    }
   }
   &__header {
     padding: 16px;
@@ -49,6 +55,9 @@
       color: #fff;
       margin: 0;
       margin-bottom: 15px;
+      @include viewport-xl {
+        font-size: 16px;
+      }
     }
     span {
       margin-top: auto;
@@ -60,8 +69,14 @@
   }
   .swiper-wrapper {
     margin-left: 16px;
+    @include viewport-xl {
+      margin: 0;
+    }
   }
 }
 .swiper-reviews {
   // overflow: visible;
+  @include viewport-xl {
+    padding: 0 20px;
+  }
 }

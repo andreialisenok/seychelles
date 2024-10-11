@@ -10,7 +10,7 @@ import $ from 'jquery';
 const burger = document.querySelector('.burger');
 burger.addEventListener('click', () => {});
 
-$('#lang').select2();
+$('.lang').select2();
 
 const swiperPromo = new Swiper('.swiper-promo', {
   loop: true,
@@ -28,6 +28,22 @@ const swiperReviews = new Swiper('.swiper-reviews', {
   slidesPerView: 1.5,
   spaceBetween: 16,
   loop: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 2.5,
+    },
+    992: {
+      slidesPerView: 3.5,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1920: {
+      slidesPerView: 5,
+      spaceBetween: 40,
+    },
+  },
 });
 const swiperHotels = new Swiper('.swiper-hotels', {
   slidesPerView: 1.5,

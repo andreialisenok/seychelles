@@ -33,4 +33,7 @@ body {
   text-shadow: 0px 0px 15px #1ed4a9, 0px 0px 8px rgba(30, 212, 169, 0.5);
   margin: 0;
   margin-bottom: 16px;
+  @include viewport-xl {
+    margin-bottom: 24px;
+  }
 }
