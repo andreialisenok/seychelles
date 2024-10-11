@@ -1,0 +1,12 @@
+.about__text{
+  color: red;
+}
+.about{
+  &__text{
+    color: white;
+    font-family: $montserrat;
+  }
+  &__title{
+    background-color: green;
+  }
+}
