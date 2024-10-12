@@ -80,4 +80,11 @@
   .swiper-slide-active {
     opacity: 1;
   }
+  .swiper-wrapper {
+    @include viewport-lg {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
 }

@@ -1,0 +1,10 @@
+.lang {
+  &--header {
+    & ~ .select2 {
+      display: none;
+      @include viewport-lg {
+        display: block;
+      }
+    }
+  }
+}

@@ -8,8 +8,21 @@ select2();
 import $ from 'jquery';
 
 const burger = document.querySelector('.burger');
-burger.addEventListener('click', () => {});
-
+const menuMobile = document.querySelector('.menumobile');
+const menuMobileWrap = document.querySelector('.menumobile__wrap');
+menuMobileWrap.addEventListener('click', (e) => {
+  e.stopPropagation();
+});
+burger.addEventListener('click', () => {
+  document.querySelector('body').classList.add('is-lock');
+  burger.classList.add('open');
+  menuMobile.classList.add('open');
+});
+menuMobile.addEventListener('click', (e) => {
+  document.querySelector('body').classList.remove('is-lock');
+  burger.classList.remove('open');
+  menuMobile.classList.remove('open');
+});
 $('.lang').select2();
 
 const swiperPromo = new Swiper('.swiper-promo', {
@@ -23,7 +36,26 @@ const swiperOffers = new Swiper('.swiper-offers', {
   slidesPerView: 2.25,
   spaceBetween: 16,
   loop: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 3.25,
+    },
+    992: {
+      slidesPerView: 5.25,
+      spaceBetween: 24,
+    },
+  },
 });
+if (window.innerWidth < 992) {
+  const swiperHotels = new Swiper('.swiper-hotels', {
+    slidesPerView: 1.5,
+    // centeredSlides: true,
+    // loopedSlides: 7,
+    spaceBetween: 40,
+    loop: true,
+    watchSlidesProgress: true,
+  });
+}
 const swiperReviews = new Swiper('.swiper-reviews', {
   slidesPerView: 1.5,
   spaceBetween: 16,
@@ -44,14 +76,6 @@ const swiperReviews = new Swiper('.swiper-reviews', {
       spaceBetween: 40,
     },
   },
-});
-const swiperHotels = new Swiper('.swiper-hotels', {
-  slidesPerView: 1.5,
-  // centeredSlides: true,
-  // loopedSlides: 7,
-  spaceBetween: 40,
-  loop: true,
-  watchSlidesProgress: true,
 });
 
 // accordion

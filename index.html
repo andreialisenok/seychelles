@@ -25,7 +25,9 @@
             <nav class="nav">
               <ul class="menudesktop">
                 <li class="menudesktop__item">
-                  <a href="./pages/about.html" class="menudesktop__link">О нас</a>
+                  <a href="./pages/about.html" class="menudesktop__link"
+                    >О нас</a
+                  >
                 </li>
                 <li class="menudesktop__item">
                   <a href="" class="menudesktop__link">Услуги</a>
@@ -55,10 +57,124 @@
                 <span></span>
                 <span></span>
               </button>
-              <select class="lang" name="lang">
+              <select class="lang lang--header" name="lang">
                 <option value="RU">RU</option>
                 <option value="ENG">ENG</option>
               </select>
+              <div class="menumobile">
+                <div class="menumobile__wrap">
+                  <div class="menumobile__header">
+                    <a href="#" class="menumobile__order">
+                      Заказы
+                      <span>1</span>
+                    </a>
+
+                    <select class="lang" name="lang">
+                      <option value="RU">RU</option>
+                      <option value="ENG">ENG</option>
+                    </select>
+                  </div>
+                  <div class="menumobile__body">
+                    <ul class="menumobile__services">
+                      <li>
+                        <a href="">
+                          <img
+                            src="./src/img/icons/hotel-dark.svg"
+                            alt="Hotel"
+                          />
+                          Отели
+                        </a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img
+                            src="./src/img/icons/cars-dark.svg"
+                            alt="Авто"
+                          />
+                          Авто</a
+                        >
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img
+                            src="./src/img/icons/airplane-dark.svg"
+                            alt="Самолеты / Вертолёты"
+                          />
+                          Самолеты / Вертолёты</a
+                        >
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img
+                            src="./src/img/icons/yacht-dark.svg"
+                            alt="Яхты / Катамараны"
+                          />
+                          Яхты / Катамараны</a
+                        >
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img
+                            src="./src/img/icons/tour-dark.svg"
+                            alt="Авторские туры"
+                          />
+                          Авторские туры</a
+                        >
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img
+                            src="./src/img/icons/excursion-dark.svg"
+                            alt="Экскурсии"
+                          />
+                          Экскурсии</a
+                        >
+                      </li>
+                    </ul>
+                    <ul class="menumobile__pages">
+                      <li>
+                        <a href="#">О нас</a>
+                      </li>
+                      <li>
+                        <a href="#">Отели</a>
+                      </li>
+                      <li>
+                        <a href="#">Отзывы</a>
+                      </li>
+                      <li>
+                        <a href="#">Контакты</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="menumobile__footer">
+                    <div class="menumobile__contacts">
+                      <a href="tel:+74951002334" class="menumobile__phone"
+                        >7 495 100 23 34</a
+                      >
+                      <div class="socials">
+                        <a href="#" class="socials__link">
+                          <img
+                            src="./src/img/icons/tg.svg"
+                            alt="Telegram"
+                          /> </a
+                        ><a href="#" class="socials__link">
+                          <img src="./src/img/icons/vk.svg" alt="VK" /> </a
+                        ><a href="#" class="socials__link">
+                          <img
+                            src="./src/img/icons/whatsapp.svg"
+                            alt="WhatsApp"
+                          /> </a
+                        ><a href="#" class="socials__link">
+                          <img src="./src/img/icons/viber.svg" alt="Viber" />
+                        </a>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn--call btn--green">
+                      Заказать звонок
+                    </button>
+                  </div>
+                </div>
+              </div>
             </nav>
           </div>
         </div>
@@ -70,71 +186,91 @@
               class="swiper-slide promo__slide"
               style="background-image: url('./src/img/promo/promo01.jpg')"
             >
-              <h2 class="promo__title">
-                <span>Отдых</span>
-                <span>на Сейшельских</span>
-                <span>островах</span>
-              </h2>
-              <p class="promo__subtitle">
-                Идеальное сочетание роскоши и природной красоты
-              </p>
-              <p class="promo__place">Назмение места / Остров Ла-Диг</p>
+              <div class="container">
+                <div class="promo__row">
+                  <h2 class="promo__title">
+                    <span>Отдых</span>
+                    <span>на Сейшельских</span>
+                    <span>островах</span>
+                  </h2>
+                  <p class="promo__subtitle">
+                    Идеальное сочетание роскоши и природной красоты
+                  </p>
+                  <p class="promo__place">Назмение места / Остров Ла-Диг</p>
+                </div>
+              </div>
             </div>
             <div
               class="swiper-slide promo__slide"
               style="background-image: url('./src/img/promo/promo02.jpg')"
             >
-              <h2 class="promo__title">
-                <span>Отдых</span>
-                <span>на Сейшельских</span>
-                <span>островах</span>
-              </h2>
-              <p class="promo__subtitle">
-                Идеальное сочетание роскоши и природной красоты
-              </p>
-              <p class="promo__place">Назмение места / Остров Ла-Диг</p>
+              <div class="container">
+                <div class="promo__row">
+                  <h2 class="promo__title">
+                    <span>Отдых</span>
+                    <span>на Сейшельских</span>
+                    <span>островах</span>
+                  </h2>
+                  <p class="promo__subtitle">
+                    Идеальное сочетание роскоши и природной красоты
+                  </p>
+                  <p class="promo__place">Назмение места / Остров Ла-Диг</p>
+                </div>
+              </div>
             </div>
             <div
               class="swiper-slide promo__slide"
               style="background-image: url('./src/img/promo/promo03.jpg')"
             >
-              <h2 class="promo__title">
-                <span>Отдых</span>
-                <span>на Сейшельских</span>
-                <span>островах</span>
-              </h2>
-              <p class="promo__subtitle">
-                Идеальное сочетание роскоши и природной красоты
-              </p>
-              <p class="promo__place">Назмение места / Остров Ла-Диг</p>
+              <div class="container">
+                <div class="promo__row">
+                  <h2 class="promo__title">
+                    <span>Отдых</span>
+                    <span>на Сейшельских</span>
+                    <span>островах</span>
+                  </h2>
+                  <p class="promo__subtitle">
+                    Идеальное сочетание роскоши и природной красоты
+                  </p>
+                  <p class="promo__place">Назмение места / Остров Ла-Диг</p>
+                </div>
+              </div>
             </div>
             <div
               class="swiper-slide promo__slide"
               style="background-image: url('./src/img/promo/promo04.jpg')"
             >
-              <h2 class="promo__title">
-                <span>Отдых</span>
-                <span>на Сейшельских</span>
-                <span>островах</span>
-              </h2>
-              <p class="promo__subtitle">
-                Идеальное сочетание роскоши и природной красоты
-              </p>
-              <p class="promo__place">Назмение места / Остров Ла-Диг</p>
+              <div class="container">
+                <div class="promo__row">
+                  <h2 class="promo__title">
+                    <span>Отдых</span>
+                    <span>на Сейшельских</span>
+                    <span>островах</span>
+                  </h2>
+                  <p class="promo__subtitle">
+                    Идеальное сочетание роскоши и природной красоты
+                  </p>
+                  <p class="promo__place">Назмение места / Остров Ла-Диг</p>
+                </div>
+              </div>
             </div>
             <div
               class="swiper-slide promo__slide"
               style="background-image: url('./src/img/promo/promo05.jpg')"
             >
-              <h2 class="promo__title">
-                <span>Отдых</span>
-                <span>на Сейшельских</span>
-                <span>островах</span>
-              </h2>
-              <p class="promo__subtitle">
-                Идеальное сочетание роскоши и природной красоты
-              </p>
-              <p class="promo__place">Назмение места / Остров Ла-Диг</p>
+              <div class="container">
+                <div class="promo__row">
+                  <h2 class="promo__title">
+                    <span>Отдых</span>
+                    <span>на Сейшельских</span>
+                    <span>островах</span>
+                  </h2>
+                  <p class="promo__subtitle">
+                    Идеальное сочетание роскоши и природной красоты
+                  </p>
+                  <p class="promo__place">Назмение места / Остров Ла-Диг</p>
+                </div>
+              </div>
             </div>
             <div
               class="swiper-slide promo__slide"
@@ -195,69 +331,77 @@
             </div>
           </div>
         </section>
-
         <section class="offers">
           <div class="container">
             <div class="offers__inner">
               <h2 class="title">Лучшие предложения</h2>
-              <div class="swiper swiper-offers">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide offers__slide">
-                    <div class="offers__img">
-                      <img src="./src/img/offers/offers01.png" alt="Отель" />
-                    </div>
-                    <div class="offers__info">
-                      <span>Отель</span>
-                      <h3>Три спальни с приватным бассеином</h3>
-                    </div>
-                  </div>
-                  <div class="swiper-slide offers__slide">
-                    <div class="offers__img">
-                      <img src="./src/img/offers/offers02.png" alt="Отель" />
-                    </div>
-                    <div class="offers__info">
-                      <span>Отель</span>
-                      <h3>
-                        Отель L'Ocean находится в Ансе Пататес на острове Ла-Диг
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="swiper-slide offers__slide">
-                    <div class="offers__img">
-                      <img src="./src/img/offers/offers03.png" alt="Отель" />
-                    </div>
-                    <div class="offers__info">
-                      <span>Яхты / Катамараны</span>
-                      <h3>Аренда яхты, катера или теплохода</h3>
-                    </div>
-                  </div>
-                  <div class="swiper-slide offers__slide">
-                    <div class="offers__img">
-                      <img src="./src/img/offers/offers04.png" alt="Отель" />
-                    </div>
-                    <div class="offers__info">
-                      <span>Авторские туры</span>
-                      <h3>Прогулка на яхте с капитаном</h3>
-                    </div>
-                  </div>
-                  <div class="swiper-slide offers__slide">
-                    <div class="offers__img">
-                      <img src="./src/img/offers/offers05.png" alt="Отель" />
-                    </div>
-                    <div class="offers__info">
-                      <span>Авто</span>
-                      <h3>Аренда БМВ</h3>
-                    </div>
-                  </div>
-                  <div class="swiper-slide offers__slide">
-                    <div class="offers__img">
-                      <img src="./src/img/offers/offers06.png" alt="Отель" />
-                    </div>
-                    <div class="offers__info">
-                      <span>Авто</span>
-                      <h3>Аренда БМВ</h3>
-                    </div>
-                  </div>
+            </div>
+          </div>
+          <div class="swiper swiper-offers">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide offers__slide">
+                <div class="offers__img">
+                  <img src="./src/img/offers/offers01.png" alt="Отель" />
+                </div>
+                <div class="offers__info">
+                  <span>Отель</span>
+                  <h3>Три спальни с приватным бассеином</h3>
+                </div>
+              </div>
+              <div class="swiper-slide offers__slide">
+                <div class="offers__img">
+                  <img src="./src/img/offers/offers02.png" alt="Отель" />
+                </div>
+                <div class="offers__info">
+                  <span>Отель</span>
+                  <h3>
+                    Отель L'Ocean находится в Ансе Пататес на острове Ла-Диг
+                  </h3>
+                </div>
+              </div>
+              <div class="swiper-slide offers__slide">
+                <div class="offers__img">
+                  <img src="./src/img/offers/offers03.png" alt="Отель" />
+                </div>
+                <div class="offers__info">
+                  <span>Яхты / Катамараны</span>
+                  <h3>Аренда яхты, катера или теплохода</h3>
+                </div>
+              </div>
+              <div class="swiper-slide offers__slide">
+                <div class="offers__img">
+                  <img src="./src/img/offers/offers04.png" alt="Отель" />
+                </div>
+                <div class="offers__info">
+                  <span>Авторские туры</span>
+                  <h3>Прогулка на яхте с капитаном</h3>
+                </div>
+              </div>
+              <div class="swiper-slide offers__slide">
+                <div class="offers__img">
+                  <img src="./src/img/offers/offers05.png" alt="Отель" />
+                </div>
+                <div class="offers__info">
+                  <span>Авто</span>
+                  <h3>Аренда БМВ</h3>
+                </div>
+              </div>
+              <div class="swiper-slide offers__slide">
+                <div class="offers__img">
+                  <img src="./src/img/offers/offers06.png" alt="Отель" />
+                </div>
+                <div class="offers__info">
+                  <span>Авто</span>
+                  <h3>Аренда БМВ</h3>
+                </div>
+              </div>
+              <div class="swiper-slide offers__slide">
+                <div class="offers__img">
+                  <img src="./src/img/offers/offers03.png" alt="Отель" />
+                </div>
+                <div class="offers__info">
+                  <span>Яхты / Катамараны</span>
+                  <h3>Аренда яхты, катера или теплохода</h3>
                 </div>
               </div>
             </div>
