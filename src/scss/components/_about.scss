@@ -1,11 +1,6 @@
 .about__row {
   &__img {
     margin-bottom: 2%;
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 9px;
-    }
   }
   &__text {
     font-family: $montserrat;
@@ -69,6 +64,11 @@
     display: flex;
     margin: 0 auto;
   }
+}
+.row__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 9px;
 }
 // --adaptiv--
 @media screen and (max-width: 1600px) {
