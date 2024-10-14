@@ -1,19 +1,7 @@
-.about__text {
-  color: red;
-}
-.about {
-  // &__text{
-  //   color: white;
-  //   font-family: $montserrat;
-  // }
-  // &__title{
-  //   background-color: green;
-  // }
-}
 .about__row {
   &__img {
-    margin-bottom: 40px;
-    img{
+    margin-bottom: 2%;
+    img {
       max-width: 100%;
       height: auto;
       border-radius: 9px;
@@ -35,6 +23,7 @@
     text-shadow: 0px 0px 15px #1ed4a9, 0px 0px 8px rgba(30, 212, 169, 0.5);
     margin-top: 16px;
     margin-bottom: 24px;
+    font-family: 'Spectral SC', serif;
   }
   &__row {
     display: flex;
@@ -82,9 +71,9 @@
   }
 }
 // --adaptiv--
-@media screen and (max-width: 1600px){
-  .about__row{
-    &__row{
+@media screen and (max-width: 1600px) {
+  .about__row {
+    &__row {
       flex-wrap: wrap;
     }
   }
