@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./UI/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./UI/select2/select2.min.css" />
+    <link rel="stylesheet" href="./UISite/style.css" />
+    <title>Seychelles</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header--fx">
+        <div class="container">
+          <div class="header__inner">
+            <a href="tel:+74951002334" class="phone-mob">
+              <img src="../UISite/images/icons/phone.svg" alt="Phone" />
+            </a>
+            <a href="./" class="logo">
+              <img src="../UISite/images/logo.png" alt="Seychelles" />
+              <span>Seychelles-premium.travel</span>
+            </a>
+            <nav class="nav">
+              <ul class="menudesktop">
+                <li class="menudesktop__item">
+                  <a href="./about.html" class="menudesktop__link">О нас</a>
+                </li>
+                <li class="menudesktop__item">
+                  <a href="./catalog.html" class="menudesktop__link">Услуги</a>
+                </li>
+                <li class="menudesktop__item">
+                  <a href="./category.html" class="menudesktop__link">Отели</a>
+                </li>
+                <li class="menudesktop__item">
+                  <a href="./contacts.html" class="menudesktop__link"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+              <a href="tel:+74951002334" class="phone-desktop"
+                >7 495 100 23 34</a
+              >
+              <button type="button" class="btn btn--call btn--white nav__call">
+                Заказать звонок
+              </button>
+              <button type="button" class="basket">
+                <img src="../UISite/images/icons/basket.svg" alt="Basket" />
+                <span>1</span>
+              </button>
+              <button type="button" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <select class="lang lang--header" name="lang">
+                <option value="RU">RU</option>
+                <option value="ENG">ENG</option>
+              </select>
+              <div class="menumobile">
+                <div class="menumobile__wrap">
+                  <div class="menumobile__header">
+                    <a href="#" class="menumobile__order">
+                      Заказы
+                      <span>1</span>
+                    </a>
+
+                    <select class="lang" name="lang">
+                      <option value="RU">RU</option>
+                      <option value="ENG">ENG</option>
+                    </select>
+                  </div>
+                  <div class="menumobile__body">
+                    <ul class="menumobile__services">
+                      <li>
+                        <a href="./category.html">
+                          <img
+                            src="../UISite/images/icons/hotel-dark.svg"
+                            alt="Hotel"
+                          />
+                          Отели
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./category.html"
+                          ><img
+                            src="../UISite/images/icons/cars-dark.svg"
+                            alt="Авто"
+                          />
+                          Авто</a
+                        >
+                      </li>
+                      <li>
+                        <a href="./category.html"
+                          ><img
+                            src="../UISite/images/icons/airplane-dark.svg"
+                            alt="Самолеты / Вертолёты"
+                          />
+                          Самолеты / Вертолёты</a
+                        >
+                      </li>
+                      <li>
+                        <a href="./category.html"
+                          ><img
+                            src="../UISite/images/icons/yacht-dark.svg"
+                            alt="Яхты / Катамараны"
+                          />
+                          Яхты / Катамараны</a
+                        >
+                      </li>
+                      <li>
+                        <a href="./category.html"
+                          ><img
+                            src="../UISite/images/icons/tour-dark.svg"
+                            alt="Авторские туры"
+                          />
+                          Авторские туры</a
+                        >
+                      </li>
+                      <li>
+                        <a href="./category.html"
+                          ><img
+                            src="../UISite/images/icons/excursion-dark.svg"
+                            alt="Экскурсии"
+                          />
+                          Экскурсии</a
+                        >
+                      </li>
+                    </ul>
+                    <ul class="menumobile__pages">
+                      <li>
+                        <a href="./about.html">О нас</a>
+                      </li>
+                      <li>
+                        <a href="./category.html">Отели</a>
+                      </li>
+                      <li>
+                        <a href="./contacts.html">Контакты</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="menumobile__footer">
+                    <div class="menumobile__contacts">
+                      <a href="tel:+74951002334" class="menumobile__phone"
+                        >7 495 100 23 34</a
+                      >
+                      <div class="socials">
+                        <a href="#" class="socials__link">
+                          <img
+                            src="../UISite/images/icons/tg.svg"
+                            alt="Telegram"
+                          /> </a
+                        ><a href="#" class="socials__link">
+                          <img
+                            src="../UISite/images/icons/vk.svg"
+                            alt="VK"
+                          /> </a
+                        ><a href="#" class="socials__link">
+                          <img
+                            src="../UISite/images/icons/whatsapp.svg"
+                            alt="WhatsApp"
+                          /> </a
+                        ><a href="#" class="socials__link">
+                          <img
+                            src="../UISite/images/icons/viber.svg"
+                            alt="Viber"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn--call btn--green">
+                      Заказать звонок
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__row">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">Услуги</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">
+                  Отели / авто / Авиа / Яхты / Туры / экскурсии
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="navigation">
+        <div class="container">
+          <div class="navigation__row">
+            <a
+              href="./category.html"
+              class="navigation__link navigation__link--active"
+            >
+              <div class="navigation__img">
+                <img src="../UISite/images/icons/hotel.svg" alt="Отели" />
+              </div>
+              <span>отели</span>
+            </a>
+            <a href="./category.html" class="navigation__link">
+              <div class="navigation__img">
+                <img src="../UISite/images/icons/cars.svg" alt="Авто" />
+              </div>
+              <span>авто</span>
+            </a>
+            <a href="./category.html" class="navigation__link">
+              <div class="navigation__img">
+                <img src="../UISite/images/icons/airplane.svg" alt="Авиа" />
+              </div>
+              <span>авиа</span>
+            </a>
+            <a href="./category.html" class="navigation__link">
+              <div class="navigation__img">
+                <img src="../UISite/images/icons/yacht.svg" alt="Яхты" />
+              </div>
+              <span>яхты</span>
+            </a>
+            <a href="./category.html" class="navigation__link">
+              <div class="navigation__img">
+                <img src="../UISite/images/icons/tour.svg" alt="Туры" />
+              </div>
+              <span>туры</span>
+            </a>
+            <a href="./category.html" class="navigation__link">
+              <div class="navigation__img">
+                <img
+                  src="../UISite/images/icons/excursion.svg"
+                  alt="Экскурсии"
+                />
+              </div>
+              <span>экскурсии</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <div class="about__row">
+            <div class="about__row__img">
+              <img
+                class="row__img"
+                src="../UISite/images/about/main-about.jpg"
+                alt=""
+              />
+            </div>
+            <p class="about__row__text">
+              Добро пожаловать в Paradise Seychelles Tours – вашу дверь в рай на
+              земле! Мы специализируемся на организации незабываемых путешествий
+              на Сейшельские острова, предлагая уникальные туры и индивидуальные
+              маршруты для каждого клиента.
+            </p>
+            <h3 class="about__row__title">Наши услуги включают:</h3>
+            <p class="about__row__text">
+              Добро пожаловать в Paradise Seychelles Tours – вашу дверь в рай на
+              земле! Мы специализируемся на организации незабываемых путешествий
+              на Сейшельские острова, предлагая уникальные туры и индивидуальные
+              маршруты для каждого клиента.
+            </p>
+            <p class="about__row__text">
+              Мы гордимся нашим индивидуальным подходом к каждому клиенту и
+              стремимся превратить ваше путешествие в настоящую сказку.
+              С Seychelles Tours вы откроете для себя рай на земле!
+            </p>
+            <div class="about__row__row">
+              <div class="about__row__item">
+                <img src="../UISite/images/about/about__row__img5.jpg" alt="" />
+                <p class="about__row__item__h">Экскурсионные туры</p>
+                <p class="about__row__item__p">
+                  Откройте для себя красоту Сейшельских островов с<br />нашими
+                  профессиональными гидами. Мы предлагаем<br />экскурсии по
+                  самым<br />
+                  живописным местам, включая национальные парки,<br />заповедники
+                  и исторические достопримечательности.
+                </p>
+              </div>
+              <div class="about__row__item">
+                <img src="../UISite/images/about/about__row__img4.jpg" alt="" />
+                <p class="about__row__item__h">Пляжный отдых</p>
+                <p class="about__row__item__p">
+                  Наслаждайтесь белоснежными пляжами и кристально<br />чистыми
+                  водами Индийского океана. Мы подберем для вас лучшие отели и
+                  курорты, чтобы ваш отдых был максимально комфортным.
+                </p>
+              </div>
+              <div class="about__row__item">
+                <img src="../UISite/images/about/about__row__img3.jpg" alt="" />
+                <p class="about__row__item__h">Активный отдых</p>
+                <p class="about__row__item__p">
+                  Для любителей приключений<br />мы предлагаем разнообразные
+                  виды активного отдыха, такие<br />как дайвинг, сноркелинг,<br />каякинг
+                  и пешие прогулки по тропическим лесам.
+                </p>
+              </div>
+              <div class="about__row__item">
+                <img src="../UISite/images/about/about__row__img2.jpg" alt="" />
+                <p class="about__row__item__h">Романтические путешествия</p>
+                <p class="about__row__item__p">
+                  Сейшельские острова –<br />идеальное место для романтического
+                  отдыха. Мы организуем для вас<br />незабываемые свадебные
+                  церемонии, медовые месяцы и романтические ужины на<br />пляже.
+                </p>
+              </div>
+              <div class="about__row__item">
+                <img src="../UISite/images/about/about__row__img1.jpg" alt="" />
+                <p class="about__row__item__h">Семейные туры</p>
+                <p class="about__row__item__p">
+                  Путешествуйте с семьей и<br />наслаждайтесь<br />разнообразными<br />
+                  развлечениями для детей и взрослых. Мы предлагаем программы,
+                  которые подойдут<br />для всех возрастов.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__col">
+              <h2 class="footer__title">Компания</h2>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >О Seyshell Travel</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">Контакты</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Благодарности</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">Отзывы</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Реквизиты компании</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Пресса о Seyshell Travel</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h2 class="footer__title">Отели</h2>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">
+                    TO Coral Strand</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">TO Savoy</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Contract Berjaya</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">Story</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Hilton Seychelles Resort</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">
+                    Mango House Seychelles, LXR Hotels & Resorts</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h2 class="footer__title">Услуги</h2>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Бронирование отелей</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Бронирование яхты и катамаранов</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Аренда автомобилей</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">Вертолёт</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Авиабилеты</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Авторские туры</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <div class="socials">
+                <a href="#" class="socials__link">
+                  <img src="../UISite/images/icons/tg.svg" alt="Telegram" /> </a
+                ><a href="#" class="socials__link">
+                  <img src="../UISite/images/icons/vk.svg" alt="VK" /> </a
+                ><a href="#" class="socials__link">
+                  <img
+                    src="../UISite/images/icons/whatsapp.svg"
+                    alt="WhatsApp"
+                  /> </a
+                ><a href="#" class="socials__link">
+                  <img src="../UISite/images/icons/viber.svg" alt="Viber" />
+                </a>
+              </div>
+              <a href="tel:+74951002334" class="footer__call">
+                <img src="../UISite/images/icons/call.svg" alt="Call" />
+                <span>7 495 100 23 34</span>
+              </a>
+              <div class="footer__exchange">
+                <p>
+                  <span>EUR:</span>
+                  <span>108,10</span>
+                </p>
+                <p>
+                  <span>USD:</span>
+                  <span>97,37</span>
+                </p>
+              </div>
+              <select class="lang" name="lang">
+                <option value="RU">RU</option>
+                <option value="ENG">ENG</option>
+              </select>
+              <!-- <select class="lang" name="lang">
+                <option
+                  style="background-image: url('../UISite/images/icons/flag-ru.svg')"
+                  value="RU"
+                >
+                  <img src="../UISite/images/logo.png" alt="" />
+                </option>
+                <option
+                  style="background-image: url('../UISite/images/icons/flag-ru.svg')"
+                  value="RU"
+                >
+                  RU
+                </option>
+              </select> -->
+            </div>
+            <div class="footer__payment">
+              <div class="footer__img">
+                <img src="../UISite/images/visa.png" alt="VISA" />
+              </div>
+              <div class="footer__img">
+                <img src="../UISite/images/mastercard.png" alt="MASTERCARD" />
+              </div>
+              <div class="footer__img">
+                <img src="../UISite/images/mir.png" alt="MIR" />
+              </div>
+            </div>
+            <p class="footer__copyright">
+              <span>Политика конфиденциальности.</span>
+              <span>© 2024 ООО «БАСТИОН»</span>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./UI/JQuery/js/jquery-2.2.4.min.js"></script>
+    <script src="./UI/select2/select2.js"></script>
+    <script src="./UI/swiper/swiper-bundle.min.js"></script>
+    <script src="./UISite/main.js"></script>
+  </body>
+</html>

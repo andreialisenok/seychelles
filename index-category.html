@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./UI/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./UI/select2/select2.min.css" />
+    <link rel="stylesheet" href="./UISite/style.css" />
+    <title>Seychelles</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header--fx">
+        <div class="container">
+          <div class="header__inner">
+            <a href="tel:+74951002334" class="phone-mob">
+              <img src="../UISite/images/icons/phone.svg" alt="Phone" />
+            </a>
+            <a href="./" class="logo">
+              <img src="../UISite/images/logo.png" alt="Seychelles" />
+              <span>Seychelles-premium.travel</span>
+            </a>
+            <nav class="nav">
+              <ul class="menudesktop">
+                <li class="menudesktop__item">
+                  <a href="./about.html" class="menudesktop__link">О нас</a>
+                </li>
+                <li class="menudesktop__item">
+                  <a href="./catalog.html" class="menudesktop__link">Услуги</a>
+                </li>
+                <li class="menudesktop__item">
+                  <a href="./category.html" class="menudesktop__link">Отели</a>
+                </li>
+                <li class="menudesktop__item">
+                  <a href="./contacts.html" class="menudesktop__link"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+              <a href="tel:+74951002334" class="phone-desktop"
+                >7 495 100 23 34</a
+              >
+              <button type="button" class="btn btn--call btn--white nav__call">
+                Заказать звонок
+              </button>
+              <button type="button" class="basket">
+                <img src="../UISite/images/icons/basket.svg" alt="Basket" />
+                <span>1</span>
+              </button>
+              <button type="button" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <select class="lang lang--header" name="lang">
+                <option value="RU">RU</option>
+                <option value="ENG">ENG</option>
+              </select>
+              <div class="menumobile">
+                <div class="menumobile__wrap">
+                  <div class="menumobile__header">
+                    <a href="#" class="menumobile__order">
+                      Заказы
+                      <span>1</span>
+                    </a>
+
+                    <select class="lang" name="lang">
+                      <option value="RU">RU</option>
+                      <option value="ENG">ENG</option>
+                    </select>
+                  </div>
+                  <div class="menumobile__body">
+                    <ul class="menumobile__services">
+                      <li>
+                        <a href="./category.html">
+                          <img
+                            src="../UISite/images/icons/hotel-dark.svg"
+                            alt="Hotel"
+                          />
+                          Отели
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./category.html"
+                          ><img
+                            src="../UISite/images/icons/cars-dark.svg"
+                            alt="Авто"
+                          />
+                          Авто</a
+                        >
+                      </li>
+                      <li>
+                        <a href="./category.html"
+                          ><img
+                            src="../UISite/images/icons/airplane-dark.svg"
+                            alt="Самолеты / Вертолёты"
+                          />
+                          Самолеты / Вертолёты</a
+                        >
+                      </li>
+                      <li>
+                        <a href="./category.html"
+                          ><img
+                            src="../UISite/images/icons/yacht-dark.svg"
+                            alt="Яхты / Катамараны"
+                          />
+                          Яхты / Катамараны</a
+                        >
+                      </li>
+                      <li>
+                        <a href="./category.html"
+                          ><img
+                            src="../UISite/images/icons/tour-dark.svg"
+                            alt="Авторские туры"
+                          />
+                          Авторские туры</a
+                        >
+                      </li>
+                      <li>
+                        <a href="./category.html"
+                          ><img
+                            src="../UISite/images/icons/excursion-dark.svg"
+                            alt="Экскурсии"
+                          />
+                          Экскурсии</a
+                        >
+                      </li>
+                    </ul>
+                    <ul class="menumobile__pages">
+                      <li>
+                        <a href="./about.html">О нас</a>
+                      </li>
+                      <li>
+                        <a href="./category.html">Отели</a>
+                      </li>
+                      <li>
+                        <a href="./contacts.html">Контакты</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="menumobile__footer">
+                    <div class="menumobile__contacts">
+                      <a href="tel:+74951002334" class="menumobile__phone"
+                        >7 495 100 23 34</a
+                      >
+                      <div class="socials">
+                        <a href="#" class="socials__link">
+                          <img
+                            src="../UISite/images/icons/tg.svg"
+                            alt="Telegram"
+                          /> </a
+                        ><a href="#" class="socials__link">
+                          <img
+                            src="../UISite/images/icons/vk.svg"
+                            alt="VK"
+                          /> </a
+                        ><a href="#" class="socials__link">
+                          <img
+                            src="../UISite/images/icons/whatsapp.svg"
+                            alt="WhatsApp"
+                          /> </a
+                        ><a href="#" class="socials__link">
+                          <img
+                            src="../UISite/images/icons/viber.svg"
+                            alt="Viber"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn--call btn--green">
+                      Заказать звонок
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <section class="breadcrumbs">
+          <div class="container">
+            <div class="breadcrumbs__row">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link">Услуги</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link">
+                    Отели / авто / Авиа / Яхты / Туры / экскурсии
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="navigation">
+          <div class="container">
+            <div class="navigation__row">
+              <a
+                href="./category.html"
+                class="navigation__link navigation__link--active"
+              >
+                <div class="navigation__img">
+                  <img src="../UISite/images/icons/hotel.svg" alt="Отели" />
+                </div>
+                <span>отели</span>
+              </a>
+              <a href="./category.html" class="navigation__link">
+                <div class="navigation__img">
+                  <img src="../UISite/images/icons/cars.svg" alt="Авто" />
+                </div>
+                <span>авто</span>
+              </a>
+              <a href="./category.html" class="navigation__link">
+                <div class="navigation__img">
+                  <img src="../UISite/images/icons/airplane.svg" alt="Авиа" />
+                </div>
+                <span>авиа</span>
+              </a>
+              <a href="./category.html" class="navigation__link">
+                <div class="navigation__img">
+                  <img src="../UISite/images/icons/yacht.svg" alt="Яхты" />
+                </div>
+                <span>яхты</span>
+              </a>
+              <a href="./category.html" class="navigation__link">
+                <div class="navigation__img">
+                  <img src="../UISite/images/icons/tour.svg" alt="Туры" />
+                </div>
+                <span>туры</span>
+              </a>
+              <a href="./category.html" class="navigation__link">
+                <div class="navigation__img">
+                  <img
+                    src="../UISite/images/icons/excursion.svg"
+                    alt="Экскурсии"
+                  />
+                </div>
+                <span>экскурсии</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="category">
+          <div class="container">
+            <div class="category__inner">
+              <h2 class="title category__header">
+                Название отеля/авто/экскурсии и тд
+                <span
+                  ><svg
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                      fill="#FEBA02"
+                    />
+                  </svg>
+                  <svg
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                      fill="#FEBA02"
+                    />
+                  </svg>
+
+                  <svg
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                      fill="#FEBA02"
+                    />
+                  </svg>
+
+                  <svg
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                      fill="#FEBA02"
+                    />
+                  </svg>
+
+                  <svg
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                      fill="#FEBA02"
+                    />
+                  </svg>
+                </span>
+              </h2>
+              <div class="subhead">
+                <p class="subhead__review">
+                  <span>
+                    <img
+                      src="../UISite/images/icons/stars-white.svg"
+                      alt="Reviews"
+                    />
+                    4.5
+                  </span>
+                  <span>16 отзывов</span>
+                </p>
+                <p class="subhead__location">
+                  <img
+                    src="../UISite/images/icons/location.svg"
+                    alt="location"
+                  />Бо Валлон, ящик 400, остров Маэ, Сейшельские острова
+                </p>
+                <p class="subhead__beach">
+                  <img src="../UISite/images/icons/beach.svg" alt="Beach" />250м
+                  от моря
+                </p>
+              </div>
+              <div class="category__item">
+                <div class="category__img">
+                  <img src="../UISite/images/hotels/hotels01.jpg" alt="Отель" />
+                </div>
+
+                <p class="category__text">
+                  Современный дизайн номера, оформленный в пастельных тонах,
+                  располагает к отдыху после активного дня, проведенного на
+                  свежем воздухе. Ванная комната оборудована душем, феном и
+                  индивидуальными туалетными принадлежностями. Просторный балкон
+                  с видом на тенистый сад отеля — лучшее место для теплого
+                  летнего утра на Сейшельских островах. В гостевом номере могут
+                  разместиться 2 взрослых или 1 взрослый и 1 ребенок.
+                  Дополнительная кровать не предоставляется.
+                </p>
+                <button type="button" class="category__btn">
+                  Подробнее...
+                </button>
+              </div>
+              <h2 class="title">Номера/Машины/... и тд</h2>
+              <ul class="cards">
+                <li class="cards__item">
+                  <div class="cards__img">
+                    <img
+                      src="../UISite/images/hotels/hotels01.jpg"
+                      alt="Отель"
+                    />
+                  </div>
+                  <span>Бель-Омбр</span>
+                  <h5 class="cards__title">
+                    Fisherman's Cove Resort
+                    <span
+                      ><svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+                    </span>
+                  </h5>
+                  <p class="cards__text">
+                    Бутик-отель Le Repaire находится в 5 минутах ходьбы
+                  </p>
+                  <a class="cards__link" href="#">Подробнее</a>
+                </li>
+                <li class="cards__item">
+                  <div class="cards__img">
+                    <img
+                      src="../UISite/images/hotels/hotels01.jpg"
+                      alt="Отель"
+                    />
+                  </div>
+                  <span>Бель-Омбр</span>
+                  <h5 class="cards__title">
+                    Fisherman's Cove Resort
+                    <span
+                      ><svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+                    </span>
+                  </h5>
+                  <p class="cards__text">
+                    Бутик-отель Le Repaire находится в 5 минутах ходьбы от
+                    центра поселка Ла-Диг и...
+                  </p>
+                  <a class="cards__link" href="#">Подробнее</a>
+                </li>
+                <li class="cards__item">
+                  <div class="cards__img">
+                    <img
+                      src="../UISite/images/hotels/hotels01.jpg"
+                      alt="Отель"
+                    />
+                  </div>
+                  <span>Бель-Омбр</span>
+                  <h5 class="cards__title">
+                    Fisherman's Cove Resort
+                    <span
+                      ><svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+                    </span>
+                  </h5>
+                  <p class="cards__text">Бутик-отель Le Repaire</p>
+                  <a class="cards__link" href="#">Подробнее</a>
+                </li>
+                <li class="cards__item">
+                  <div class="cards__img">
+                    <img
+                      src="../UISite/images/hotels/hotels01.jpg"
+                      alt="Отель"
+                    />
+                  </div>
+                  <span>Бель-Омбр</span>
+                  <h5 class="cards__title">
+                    Fisherman's Cove Resort
+                    <span
+                      ><svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+                    </span>
+                  </h5>
+                  <p class="cards__text">
+                    Бутик-отель Le Repaire находится в 5 минутах ходьбы от
+                    центра поселка Ла-Диг и...
+                  </p>
+                  <a class="cards__link" href="#">Подробнее</a>
+                </li>
+                <li class="cards__item">
+                  <div class="cards__img">
+                    <img
+                      src="../UISite/images/hotels/hotels01.jpg"
+                      alt="Отель"
+                    />
+                  </div>
+                  <span>Бель-Омбр</span>
+                  <h5 class="cards__title">
+                    Fisherman's Cove Resort
+                    <span
+                      ><svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10.8871L10.3949 12.8821C11.0166 13.2477 11.7774 12.7073 11.6138 12.0237L10.7139 8.27213L13.7162 5.74459C14.2643 5.2836 13.9698 4.40929 13.2499 4.35365L9.29871 4.02777L7.7526 0.482856C7.47447 -0.160952 6.52553 -0.160952 6.2474 0.482856L4.70129 4.01982L0.750115 4.3457C0.030233 4.40134 -0.264264 5.27565 0.283828 5.73665L3.28606 8.26419L2.38621 12.0158C2.2226 12.6993 2.98339 13.2398 3.6051 12.8742L7 10.8871Z"
+                          fill="#FEBA02"
+                        />
+                      </svg>
+                    </span>
+                  </h5>
+                  <p class="cards__text">
+                    Бутик-отель Le Repaire находится в 5 минутах ходьбы от
+                    центра поселка Ла-Диг и...
+                  </p>
+                  <a class="cards__link" href="#">Подробнее</a>
+                </li>
+              </ul>
+              <div class="description">
+                <h2 class="title">Описание отеля</h2>
+                <div class="description__btns">
+                  <button
+                    type="button"
+                    class="description__btn active"
+                    data-tab-target="#general"
+                  >
+                    Общее
+                  </button>
+                  <button
+                    type="button"
+                    class="description__btn "
+                    data-tab-target="#complement"
+                  >
+                    Дополнительно
+                  </button>
+                  <button
+                    type="button"
+                    class="description__btn "
+                    data-tab-target="#review"
+                  >
+                    Отзывы 3
+                  </button>
+                </div>
+                <div class="description__content">
+                  <div
+                    id="general"
+                    class="description__general active"
+                    data-tab-content
+                  >
+                    <ul>
+                      <li>
+                        <p>Общее</p>
+                        <p>
+                          <span>Дата основания :2014 </span>
+                          <span
+                            >Общая площадь : 164 комнат, от 24 до 117 м2</span
+                          >
+                        </p>
+                      </li>
+                      <li>
+                        <p>Расположение</p>
+                        <p>
+                          <span>Город: Mahe</span>
+                          <span
+                            >В 3 км от города Mauritius North West Coast. В 3 км
+                            от центра города Mauritius North West Coast</span
+                          >
+                          <span>В 42 км от аэропорта Mauritius-MRU</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>В отеле</p>
+                        <p>
+                          <span>Бунгало: 15 (этажей: 3, лифтов: Нет)</span>
+                          <span
+                            >Рестораны: 5 (из них ресторанов а’ля карт: 2)</span
+                          >
+                          <span>Бары: 2</span>
+                          <span>Комнаты для переговоров: 5</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>Бассейны для взрослых: 2</p>
+                        <p>
+                          <span>Открытый Бассейн</span>
+                          <span>Открытый Бассейн</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>Пляж</p>
+                        <p>
+                          <span>До пляжа, 150 м </span>
+                          <span>
+                            Собственный песчаный пляж на территории
+                            общественного пляжа, протяженность 600 м
+                          </span>
+                          <span> Песчаный пляж </span>
+                          <span> Песчаный вход в воду </span>
+                          <span>Зонты</span>
+                          <span>Шезлонги</span>
+                          <span> Пляжные полотенца </span>
+                          <span> Павильон на пляже (Платно) </span>
+                          <span> Душ на пляже </span>
+                          <span> Питание и напитки на пляже (Платно)</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>Особенности</p>
+                        <p>
+                          <span
+                            >Депозит при заселении: Кредитная карта, Наличные,
+                            Документы</span
+                          >
+                        </p>
+                      </li>
+                      <li>
+                        <p>Контакты</p>
+                        <p>
+                          <span>Телефон: +248 429 10 01 </span>
+                          <span>Сайт: coralstrand.com</span>
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div
+                    id="complement"
+                    class="description__complement"
+                    data-tab-content
+                  >
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Consequuntur error aut, est nobis blanditiis pariatur
+                      libero expedita corrupti placeat. Voluptatum quia repellat
+                      debitis natus ullam omnis laudantium iusto ea laboriosam
+                      eveniet maiores, consequatur possimus cupiditate illo
+                      perferendis quas inventore enim porro suscipit! Ipsum,
+                      deleniti! Fugit eligendi, animi vero doloribus error,
+                      officiis aliquid, reiciendis eius recusandae quo voluptas!
+                      Beatae porro autem hic recusandae rem consequatur rerum
+                      fugit. Voluptas, illo. Autem id fuga possimus est fugit,
+                      excepturi saepe aut hic cumque culpa, reiciendis commodi
+                      nesciunt quia necessitatibus libero molestiae ducimus
+                      nihil ipsum facere illum, consectetur eaque nemo aperiam
+                      error. Quae animi quaerat architecto repellat minus,
+                      itaque unde nulla consectetur dignissimos doloribus
+                      obcaecati. Provident, libero iure! Exercitationem enim
+                      beatae totam rerum natus unde voluptatibus odio,
+                      recusandae porro obcaecati atque consectetur doloribus
+                      voluptate, corporis architecto optio impedit nihil?
+                      Consectetur est et rem recusandae architecto quidem nihil
+                      enim doloremque accusantium eveniet, sunt libero omnis
+                      voluptatem beatae eius molestiae velit? Facere sint
+                      dolores, consequuntur veniam magnam ipsam sit minima
+                      provident perferendis enim esse ducimus similique vitae
+                      quae unde a obcaecati laborum. Id cupiditate, qui
+                      exercitationem nisi beatae tempore aliquam? Adipisci fugit
+                      alias odit, minus eveniet eius vero, id non ipsam,
+                      deserunt unde quaerat quas at. Corrupti, dicta. Inventore,
+                      eveniet minus sunt possimus vitae fuga nesciunt voluptas
+                      rerum architecto dolor aliquam sint culpa magnam quae nemo
+                      in? Eaque reiciendis placeat nam dolore officia, quis,
+                      accusantium corrupti itaque, adipisci magnam totam dicta
+                      voluptas beatae vitae iusto. A cum quisquam beatae aut
+                      facere, quod pariatur maiores ut? Laborum animi asperiores
+                      recusandae velit porro provident cum molestias officia,
+                      voluptates natus soluta harum, illo nobis tempora? Illum,
+                      ad ipsum voluptatem nulla at minus debitis vel eos
+                      architecto aspernatur, itaque voluptas, amet eveniet neque
+                      nisi ratione temporibus a odio excepturi hic saepe aliquam
+                      repudiandae. Perferendis obcaecati laboriosam dignissimos
+                      nobis eius? Quibusdam, voluptate?
+                    </p>
+                  </div>
+                  <div
+                    id="review"
+                    class="description__reviews"
+                    data-tab-content
+                  >
+                    <ul>
+                      <li>
+                        <img
+                          src="../UISite/images/hotels/hotels01.jpg"
+                          alt=""
+                        />
+                        <div>
+                          <p>
+                            Дмитрий Д.
+                            <img
+                              src="../UISite/images/icons/stars-white.svg"
+                              alt=""
+                            />
+                            5
+                          </p>
+                          <p>
+                            Понравилось все: персонал, обстановка, вид с балкона
+                            на фонтаны! Менеджер быстро решил проблему с
+                            потерянным паспортом. Отличный сервис!
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <img
+                          src="../UISite/images/hotels/hotels01.jpg"
+                          alt=""
+                        />
+                        <div>
+                          <p>
+                            Дмитрий Д.
+                            <img
+                              src="../UISite/images/icons/stars-white.svg"
+                              alt=""
+                            />
+                            5
+                          </p>
+                          <p>
+                            Понравилось все: персонал, обстановка, вид с балкона
+                            на фонтаны! Менеджер быстро решил проблему с
+                            потерянным паспортом. Отличный сервис!
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <img
+                          src="../UISite/images/hotels/hotels01.jpg"
+                          alt=""
+                        />
+                        <div>
+                          <p>
+                            Дмитрий Д.
+                            <img
+                              src="../UISite/images/icons/stars-white.svg"
+                              alt=""
+                            />
+                            5
+                          </p>
+                          <p>
+                            Понравилось все: персонал, обстановка, вид с балкона
+                            на фонтаны! Менеджер быстро решил проблему с
+                            потерянным паспортом. Отличный сервис!
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                    <a href="">Написать отзыв</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="accordion">
+          <div class="container">
+            <div class="accordion__inner">
+              <h2 class="title">Часто задаваемые вопросы</h2>
+              <ul class="accordion__list">
+                <li class="accordion__item">
+                  <button aria-expanded="false">
+                    <span class="accordion__title"
+                      >Какие документы необходимы для бронирования и заселения в
+                      отель?
+                    </span>
+                    <span class="accordion__icon">
+                      <img
+                        src="../UISite/images/icons/accordion-btn.svg"
+                        alt="Close"
+                    /></span>
+                  </button>
+                  <div class="accordion__content">
+                    <p>
+                      Для бронирования обычно требуется паспорт и кредитная
+                      карта. При заселении также могут попросить предоставить
+                      подтверждение бронирования и визу.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion__item">
+                  <button aria-expanded="false">
+                    <span class="accordion__title"
+                      >Какие документы необходимы для бронирования и заселения в
+                      отель?
+                    </span>
+                    <span class="accordion__icon">
+                      <img
+                        src="../UISite/images/icons/accordion-btn.svg"
+                        alt="Close"
+                      />
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <p>
+                      Для бронирования обычно требуется паспорт и кредитная
+                      карта. При заселении также могут попросить предоставить
+                      подтверждение бронирования и визу.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion__item">
+                  <button aria-expanded="false">
+                    <span class="accordion__title"
+                      >Какие удобства обычно предоставляются в отелях на
+                      Сейшелах?
+                    </span>
+                    <span class="accordion__icon">
+                      <img
+                        src="../UISite/images/icons/accordion-btn.svg"
+                        alt="Close"
+                      />
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <p>
+                      Для бронирования обычно требуется паспорт и кредитная
+                      карта. При заселении также могут попросить предоставить
+                      подтверждение бронирования и визу.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion__item">
+                  <button aria-expanded="false">
+                    <span class="accordion__title"
+                      >Можно ли забронировать номер с видом на океан?
+                    </span>
+                    <span class="accordion__icon">
+                      <img
+                        src="../UISite/images/icons/accordion-btn.svg"
+                        alt="Close"
+                      />
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <p>
+                      Для бронирования обычно требуется паспорт и кредитная
+                      карта. При заселении также могут попросить предоставить
+                      подтверждение бронирования и визу.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion__item">
+                  <button aria-expanded="false">
+                    <span class="accordion__title"
+                      >Какие меры безопасности принимаются в отелях?
+                    </span>
+                    <span class="accordion__icon">
+                      <img
+                        src="../UISite/images/icons/accordion-btn.svg"
+                        alt="Close"
+                      />
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <p>
+                      Для бронирования обычно требуется паспорт и кредитная
+                      карта. При заселении также могут попросить предоставить
+                      подтверждение бронирования и визу.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion__item">
+                  <button aria-expanded="false">
+                    <span class="accordion__title"
+                      >Есть ли в отелях услуги для семей с детьми?
+                    </span>
+                    <span class="accordion__icon">
+                      <img
+                        src="../UISite/images/icons/accordion-btn.svg"
+                        alt="Close"
+                      />
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <p>
+                      Для бронирования обычно требуется паспорт и кредитная
+                      карта. При заселении также могут попросить предоставить
+                      подтверждение бронирования и визу.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__col">
+              <h2 class="footer__title">Компания</h2>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >О Seyshell Travel</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">Контакты</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Благодарности</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">Отзывы</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Реквизиты компании</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Пресса о Seyshell Travel</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h2 class="footer__title">Отели</h2>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">
+                    TO Coral Strand</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">TO Savoy</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Contract Berjaya</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">Story</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Hilton Seychelles Resort</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">
+                    Mango House Seychelles, LXR Hotels & Resorts</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h2 class="footer__title">Услуги</h2>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Бронирование отелей</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Бронирование яхты и катамаранов</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Аренда автомобилей</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">Вертолёт</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Авиабилеты</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank"
+                    >Авторские туры</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <div class="socials">
+                <a href="#" class="socials__link">
+                  <img src="../UISite/images/icons/tg.svg" alt="Telegram" /> </a
+                ><a href="#" class="socials__link">
+                  <img src="../UISite/images/icons/vk.svg" alt="VK" /> </a
+                ><a href="#" class="socials__link">
+                  <img
+                    src="../UISite/images/icons/whatsapp.svg"
+                    alt="WhatsApp"
+                  /> </a
+                ><a href="#" class="socials__link">
+                  <img src="../UISite/images/icons/viber.svg" alt="Viber" />
+                </a>
+              </div>
+              <a href="tel:+74951002334" class="footer__call">
+                <img src="../UISite/images/icons/call.svg" alt="Call" />
+                <span>7 495 100 23 34</span>
+              </a>
+              <div class="footer__exchange">
+                <p>
+                  <span>EUR:</span>
+                  <span>108,10</span>
+                </p>
+                <p>
+                  <span>USD:</span>
+                  <span>97,37</span>
+                </p>
+              </div>
+              <select class="lang" name="lang">
+                <option value="RU">RU</option>
+                <option value="ENG">ENG</option>
+              </select>
+              <!-- <select class="lang" name="lang">
+                <option
+                  style="background-image: url('../UISite/images/icons/flag-ru.svg')"
+                  value="RU"
+                >
+                  <img src="../UISite/images/logo.png" alt="" />
+                </option>
+                <option
+                  style="background-image: url('../UISite/images/icons/flag-ru.svg')"
+                  value="RU"
+                >
+                  RU
+                </option>
+              </select> -->
+            </div>
+            <div class="footer__payment">
+              <div class="footer__img">
+                <img src="../UISite/images/visa.png" alt="VISA" />
+              </div>
+              <div class="footer__img">
+                <img src="../UISite/images/mastercard.png" alt="MASTERCARD" />
+              </div>
+              <div class="footer__img">
+                <img src="../UISite/images/mir.png" alt="MIR" />
+              </div>
+            </div>
+            <p class="footer__copyright">
+              <span>Политика конфиденциальности.</span>
+              <span>© 2024 ООО «БАСТИОН»</span>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./UI/JQuery/js/jquery-2.2.4.min.js"></script>
+    <script src="./UI/select2/select2.js"></script>
+    <script src="./UI/swiper/swiper-bundle.min.js"></script>
+    <script src="./UISite/main.js"></script>
+  </body>
+</html>

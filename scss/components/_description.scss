@@ -1,0 +1,157 @@
+.description {
+  margin-top: 40px;
+  &__btns {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    @include viewport-sm {
+      flex-direction: row;
+      gap: 40px;
+    }
+  }
+  &__btn {
+    font-family: $montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: rgba(255, 255, 255, 1);
+    &.active {
+      border-bottom: 2px solid rgba(0, 128, 133, 1);
+    }
+  }
+  &__content {
+  }
+  &__general {
+    display: none;
+    &.active {
+      display: block;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      overflow: hidden;
+      li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        @include viewport-lg {
+          flex-direction: row;
+        }
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        p:first-child {
+          margin: 0;
+          background: rgba(20, 82, 96, 1);
+          padding: 16px;
+          @include viewport-lg {
+            flex: 0 0 300px;
+          }
+
+          span {
+            font-family: $montserrat;
+            font-size: 16px;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 1);
+          }
+        }
+        p:last-child {
+          margin: 0;
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          span {
+            font-family: $montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+          }
+        }
+      }
+    }
+  }
+  &__complement {
+    display: none;
+    &.active {
+      display: block;
+    }
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    p {
+      font-family: $montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0;
+      padding: 16px;
+    }
+  }
+  &__reviews {
+    display: none;
+    &.active {
+      display: block;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-bottom: 40px;
+      li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        @include viewport-lg {
+          flex-direction: row;
+          gap: 24px;
+        }
+        & > img {
+          width: 80px;
+          height: 80px;
+          border-radius: 8px;
+          margin-bottom: 16px;
+          @include viewport-lg {
+            margin: 0;
+          }
+        }
+        p {
+          &:first-child {
+            font-family: $montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0;
+            margin-bottom: 16px;
+          }
+          &:last-child {
+            font-family: $montserrat;
+            font-size: 20px;
+            font-weight: 300;
+            margin: 0;
+          }
+        }
+      }
+    }
+    a {
+      font-family: $montserrat;
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

@@ -2,12 +2,15 @@
 <html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./UI/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./UI/select2/select2.min.css" />
+    <link rel="stylesheet" href="./UISite/style.css" />
     <title>Seychelles</title>
   </head>
   <body>
@@ -16,30 +19,27 @@
         <div class="container">
           <div class="header__inner">
             <a href="tel:+74951002334" class="phone-mob">
-              <img src="./src/img/icons/phone.svg" alt="Phone" />
+              <img src="../UISite/images/icons/phone.svg" alt="Phone" />
             </a>
             <a href="./" class="logo">
-              <img src="./src/img/logo.png" alt="Seychelles" />
+              <img src="../UISite/images/logo.png" alt="Seychelles" />
               <span>Seychelles-premium.travel</span>
             </a>
             <nav class="nav">
               <ul class="menudesktop">
                 <li class="menudesktop__item">
-                  <a href="./pages/about.html" class="menudesktop__link"
-                    >О нас</a
+                  <a href="./about.html" class="menudesktop__link">О нас</a>
+                </li>
+                <li class="menudesktop__item">
+                  <a href="./catalog.html" class="menudesktop__link">Услуги</a>
+                </li>
+                <li class="menudesktop__item">
+                  <a href="./category.html" class="menudesktop__link">Отели</a>
+                </li>
+                <li class="menudesktop__item">
+                  <a href="./contacts.html" class="menudesktop__link"
+                    >Контакты</a
                   >
-                </li>
-                <li class="menudesktop__item">
-                  <a href="" class="menudesktop__link">Услуги</a>
-                </li>
-                <li class="menudesktop__item">
-                  <a href="" class="menudesktop__link">Отели</a>
-                </li>
-                <li class="menudesktop__item">
-                  <a href="" class="menudesktop__link">Отзывы</a>
-                </li>
-                <li class="menudesktop__item">
-                  <a href="" class="menudesktop__link">Контакты</a>
                 </li>
               </ul>
               <a href="tel:+74951002334" class="phone-desktop"
@@ -49,7 +49,7 @@
                 Заказать звонок
               </button>
               <button type="button" class="basket">
-                <img src="./src/img/icons/basket.svg" alt="Basket" />
+                <img src="../UISite/images/icons/basket.svg" alt="Basket" />
                 <span>1</span>
               </button>
               <button type="button" class="burger">
@@ -77,54 +77,54 @@
                   <div class="menumobile__body">
                     <ul class="menumobile__services">
                       <li>
-                        <a href="">
+                        <a href="./category.html">
                           <img
-                            src="./src/img/icons/hotel-dark.svg"
+                            src="../UISite/images/icons/hotel-dark.svg"
                             alt="Hotel"
                           />
                           Отели
                         </a>
                       </li>
                       <li>
-                        <a href=""
+                        <a href="./category.html"
                           ><img
-                            src="./src/img/icons/cars-dark.svg"
+                            src="../UISite/images/icons/cars-dark.svg"
                             alt="Авто"
                           />
                           Авто</a
                         >
                       </li>
                       <li>
-                        <a href=""
+                        <a href="./category.html"
                           ><img
-                            src="./src/img/icons/airplane-dark.svg"
+                            src="../UISite/images/icons/airplane-dark.svg"
                             alt="Самолеты / Вертолёты"
                           />
                           Самолеты / Вертолёты</a
                         >
                       </li>
                       <li>
-                        <a href=""
+                        <a href="./category.html"
                           ><img
-                            src="./src/img/icons/yacht-dark.svg"
+                            src="../UISite/images/icons/yacht-dark.svg"
                             alt="Яхты / Катамараны"
                           />
                           Яхты / Катамараны</a
                         >
                       </li>
                       <li>
-                        <a href=""
+                        <a href="./category.html"
                           ><img
-                            src="./src/img/icons/tour-dark.svg"
+                            src="../UISite/images/icons/tour-dark.svg"
                             alt="Авторские туры"
                           />
                           Авторские туры</a
                         >
                       </li>
                       <li>
-                        <a href=""
+                        <a href="./category.html"
                           ><img
-                            src="./src/img/icons/excursion-dark.svg"
+                            src="../UISite/images/icons/excursion-dark.svg"
                             alt="Экскурсии"
                           />
                           Экскурсии</a
@@ -133,16 +133,13 @@
                     </ul>
                     <ul class="menumobile__pages">
                       <li>
-                        <a href="#">О нас</a>
+                        <a href="./about.html">О нас</a>
                       </li>
                       <li>
-                        <a href="#">Отели</a>
+                        <a href="./category.html">Отели</a>
                       </li>
                       <li>
-                        <a href="#">Отзывы</a>
-                      </li>
-                      <li>
-                        <a href="#">Контакты</a>
+                        <a href="./contacts.html">Контакты</a>
                       </li>
                     </ul>
                   </div>
@@ -154,18 +151,24 @@
                       <div class="socials">
                         <a href="#" class="socials__link">
                           <img
-                            src="./src/img/icons/tg.svg"
+                            src="../UISite/images/icons/tg.svg"
                             alt="Telegram"
                           /> </a
                         ><a href="#" class="socials__link">
-                          <img src="./src/img/icons/vk.svg" alt="VK" /> </a
+                          <img
+                            src="../UISite/images/icons/vk.svg"
+                            alt="VK"
+                          /> </a
                         ><a href="#" class="socials__link">
                           <img
-                            src="./src/img/icons/whatsapp.svg"
+                            src="../UISite/images/icons/whatsapp.svg"
                             alt="WhatsApp"
                           /> </a
                         ><a href="#" class="socials__link">
-                          <img src="./src/img/icons/viber.svg" alt="Viber" />
+                          <img
+                            src="../UISite/images/icons/viber.svg"
+                            alt="Viber"
+                          />
                         </a>
                       </div>
                     </div>
@@ -184,7 +187,9 @@
           <div class="swiper-wrapper">
             <div
               class="swiper-slide promo__slide"
-              style="background-image: url('./src/img/promo/promo01.jpg')"
+              style="
+                background-image: url('../UISite/images/promo/promo01.jpg');
+              "
             >
               <div class="container">
                 <div class="promo__row">
@@ -202,7 +207,9 @@
             </div>
             <div
               class="swiper-slide promo__slide"
-              style="background-image: url('./src/img/promo/promo02.jpg')"
+              style="
+                background-image: url('../UISite/images/promo/promo02.jpg');
+              "
             >
               <div class="container">
                 <div class="promo__row">
@@ -220,7 +227,9 @@
             </div>
             <div
               class="swiper-slide promo__slide"
-              style="background-image: url('./src/img/promo/promo03.jpg')"
+              style="
+                background-image: url('../UISite/images/promo/promo03.jpg');
+              "
             >
               <div class="container">
                 <div class="promo__row">
@@ -238,7 +247,9 @@
             </div>
             <div
               class="swiper-slide promo__slide"
-              style="background-image: url('./src/img/promo/promo04.jpg')"
+              style="
+                background-image: url('../UISite/images/promo/promo04.jpg');
+              "
             >
               <div class="container">
                 <div class="promo__row">
@@ -256,7 +267,9 @@
             </div>
             <div
               class="swiper-slide promo__slide"
-              style="background-image: url('./src/img/promo/promo05.jpg')"
+              style="
+                background-image: url('../UISite/images/promo/promo05.jpg');
+              "
             >
               <div class="container">
                 <div class="promo__row">
@@ -274,17 +287,23 @@
             </div>
             <div
               class="swiper-slide promo__slide"
-              style="background-image: url('./src/img/promo/promo06.jpg')"
+              style="
+                background-image: url('../UISite/images/promo/promo06.jpg');
+              "
             >
-              <h2 class="promo__title">
-                <span>Отдых</span>
-                <span>на Сейшельских</span>
-                <span>островах</span>
-              </h2>
-              <p class="promo__subtitle">
-                Идеальное сочетание роскоши и природной красоты
-              </p>
-              <p class="promo__place">Назмение места / Остров Ла-Диг</p>
+              <div class="container">
+                <div class="promo__row">
+                  <h2 class="promo__title">
+                    <span>Отдых</span>
+                    <span>на Сейшельских</span>
+                    <span>островах</span>
+                  </h2>
+                  <p class="promo__subtitle">
+                    Идеальное сочетание роскоши и природной красоты
+                  </p>
+                  <p class="promo__place">Назмение места / Остров Ла-Диг</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -292,39 +311,42 @@
         <section class="navigation">
           <div class="container">
             <div class="navigation__row">
-              <a href="#" class="navigation__link">
+              <a href="./category.html" class="navigation__link">
                 <div class="navigation__img">
-                  <img src="./src/img/icons/hotel.svg" alt="Отели" />
+                  <img src="../UISite/images/icons/hotel.svg" alt="Отели" />
                 </div>
                 <span>отели</span>
               </a>
-              <a href="#" class="navigation__link">
+              <a href="./category.html" class="navigation__link">
                 <div class="navigation__img">
-                  <img src="./src/img/icons/cars.svg" alt="Авто" />
+                  <img src="../UISite/images/icons/cars.svg" alt="Авто" />
                 </div>
                 <span>авто</span>
               </a>
-              <a href="#" class="navigation__link">
+              <a href="./category.html" class="navigation__link">
                 <div class="navigation__img">
-                  <img src="./src/img/icons/airplane.svg" alt="Авиа" />
+                  <img src="../UISite/images/icons/airplane.svg" alt="Авиа" />
                 </div>
                 <span>авиа</span>
               </a>
-              <a href="#" class="navigation__link">
+              <a href="./category.html" class="navigation__link">
                 <div class="navigation__img">
-                  <img src="./src/img/icons/yacht.svg" alt="Яхты" />
+                  <img src="../UISite/images/icons/yacht.svg" alt="Яхты" />
                 </div>
                 <span>яхты</span>
               </a>
-              <a href="#" class="navigation__link">
+              <a href="./category.html" class="navigation__link">
                 <div class="navigation__img">
-                  <img src="./src/img/icons/tour.svg" alt="Туры" />
+                  <img src="../UISite/images/icons/tour.svg" alt="Туры" />
                 </div>
                 <span>туры</span>
               </a>
-              <a href="#" class="navigation__link">
+              <a href="./category.html" class="navigation__link">
                 <div class="navigation__img">
-                  <img src="./src/img/icons/excursion.svg" alt="Экскурсии" />
+                  <img
+                    src="../UISite/images/icons/excursion.svg"
+                    alt="Экскурсии"
+                  />
                 </div>
                 <span>экскурсии</span>
               </a>
@@ -341,7 +363,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide offers__slide">
                 <div class="offers__img">
-                  <img src="./src/img/offers/offers01.png" alt="Отель" />
+                  <img src="../UISite/images/offers/offers01.png" alt="Отель" />
                 </div>
                 <div class="offers__info">
                   <span>Отель</span>
@@ -350,7 +372,7 @@
               </div>
               <div class="swiper-slide offers__slide">
                 <div class="offers__img">
-                  <img src="./src/img/offers/offers02.png" alt="Отель" />
+                  <img src="../UISite/images/offers/offers02.png" alt="Отель" />
                 </div>
                 <div class="offers__info">
                   <span>Отель</span>
@@ -361,7 +383,7 @@
               </div>
               <div class="swiper-slide offers__slide">
                 <div class="offers__img">
-                  <img src="./src/img/offers/offers03.png" alt="Отель" />
+                  <img src="../UISite/images/offers/offers03.png" alt="Отель" />
                 </div>
                 <div class="offers__info">
                   <span>Яхты / Катамараны</span>
@@ -370,7 +392,7 @@
               </div>
               <div class="swiper-slide offers__slide">
                 <div class="offers__img">
-                  <img src="./src/img/offers/offers04.png" alt="Отель" />
+                  <img src="../UISite/images/offers/offers04.png" alt="Отель" />
                 </div>
                 <div class="offers__info">
                   <span>Авторские туры</span>
@@ -379,7 +401,7 @@
               </div>
               <div class="swiper-slide offers__slide">
                 <div class="offers__img">
-                  <img src="./src/img/offers/offers05.png" alt="Отель" />
+                  <img src="../UISite/images/offers/offers05.png" alt="Отель" />
                 </div>
                 <div class="offers__info">
                   <span>Авто</span>
@@ -388,7 +410,7 @@
               </div>
               <div class="swiper-slide offers__slide">
                 <div class="offers__img">
-                  <img src="./src/img/offers/offers06.png" alt="Отель" />
+                  <img src="../UISite/images/offers/offers06.png" alt="Отель" />
                 </div>
                 <div class="offers__info">
                   <span>Авто</span>
@@ -397,7 +419,7 @@
               </div>
               <div class="swiper-slide offers__slide">
                 <div class="offers__img">
-                  <img src="./src/img/offers/offers03.png" alt="Отель" />
+                  <img src="../UISite/images/offers/offers03.png" alt="Отель" />
                 </div>
                 <div class="offers__info">
                   <span>Яхты / Катамараны</span>
@@ -415,7 +437,10 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide hotels__slide">
                     <div class="hotels__img">
-                      <img src="./src/img/hotels/hotels01.jpg" alt="Отель" />
+                      <img
+                        src="../UISite/images/hotels/hotels01.jpg"
+                        alt="Отель"
+                      />
                     </div>
                     <div class="hotels__title">
                       <h2>TO Coral Strand1</h2>
@@ -499,17 +524,19 @@
                       </p>
                       <p class="hotels__location">
                         <img
-                          src="./src/img/icons/location.svg"
+                          src="../UISite/images/icons/location.svg"
                           alt="location"
                         />Бо Валлон, ящик 400, остров Маэ, Сейшельские острова
                       </p>
                       <p class="hotels__beach">
-                        <img src="./src/img/icons/beach.svg" alt="Beach" />250м
-                        от моря
+                        <img
+                          src="../UISite/images/icons/beach.svg"
+                          alt="Beach"
+                        />250м от моря
                       </p>
                       <p class="hotels__building">
                         <img
-                          src="./src/img/icons/building.svg"
+                          src="../UISite/images/icons/building.svg"
                           alt="building"
                         />164 номера, 2 бассейна, 2 бара
                       </p>
@@ -523,7 +550,10 @@
                   </div>
                   <div class="swiper-slide hotels__slide">
                     <div class="hotels__img">
-                      <img src="./src/img/hotels/hotels01.jpg" alt="Отель" />
+                      <img
+                        src="../UISite/images/hotels/hotels01.jpg"
+                        alt="Отель"
+                      />
                     </div>
                     <div class="hotels__title">
                       <h2>TO Coral Strand2</h2>
@@ -607,17 +637,19 @@
                       </p>
                       <p class="hotels__location">
                         <img
-                          src="./src/img/icons/location.svg"
+                          src="../UISite/images/icons/location.svg"
                           alt="location"
                         />Бо Валлон, ящик 400, остров Маэ, Сейшельские острова
                       </p>
                       <p class="hotels__beach">
-                        <img src="./src/img/icons/beach.svg" alt="Beach" />250м
-                        от моря
+                        <img
+                          src="../UISite/images/icons/beach.svg"
+                          alt="Beach"
+                        />250м от моря
                       </p>
                       <p class="hotels__building">
                         <img
-                          src="./src/img/icons/building.svg"
+                          src="../UISite/images/icons/building.svg"
                           alt="building"
                         />164 номера, 2 бассейна, 2 бара
                       </p>
@@ -631,7 +663,10 @@
                   </div>
                   <div class="swiper-slide hotels__slide">
                     <div class="hotels__img">
-                      <img src="./src/img/hotels/hotels01.jpg" alt="Отель" />
+                      <img
+                        src="../UISite/images/hotels/hotels01.jpg"
+                        alt="Отель"
+                      />
                     </div>
                     <div class="hotels__title">
                       <h2>TO Coral Strand3</h2>
@@ -715,17 +750,19 @@
                       </p>
                       <p class="hotels__location">
                         <img
-                          src="./src/img/icons/location.svg"
+                          src="../UISite/images/icons/location.svg"
                           alt="location"
                         />Бо Валлон, ящик 400, остров Маэ, Сейшельские острова
                       </p>
                       <p class="hotels__beach">
-                        <img src="./src/img/icons/beach.svg" alt="Beach" />250м
-                        от моря
+                        <img
+                          src="../UISite/images/icons/beach.svg"
+                          alt="Beach"
+                        />250м от моря
                       </p>
                       <p class="hotels__building">
                         <img
-                          src="./src/img/icons/building.svg"
+                          src="../UISite/images/icons/building.svg"
                           alt="building"
                         />164 номера, 2 бассейна, 2 бара
                       </p>
@@ -739,7 +776,10 @@
                   </div>
                   <div class="swiper-slide hotels__slide">
                     <div class="hotels__img">
-                      <img src="./src/img/hotels/hotels01.jpg" alt="Отель" />
+                      <img
+                        src="../UISite/images/hotels/hotels01.jpg"
+                        alt="Отель"
+                      />
                     </div>
                     <div class="hotels__title">
                       <h2>TO Coral Strand4</h2>
@@ -823,17 +863,19 @@
                       </p>
                       <p class="hotels__location">
                         <img
-                          src="./src/img/icons/location.svg"
+                          src="../UISite/images/icons/location.svg"
                           alt="location"
                         />Бо Валлон, ящик 400, остров Маэ, Сейшельские острова
                       </p>
                       <p class="hotels__beach">
-                        <img src="./src/img/icons/beach.svg" alt="Beach" />250м
-                        от моря
+                        <img
+                          src="../UISite/images/icons/beach.svg"
+                          alt="Beach"
+                        />250м от моря
                       </p>
                       <p class="hotels__building">
                         <img
-                          src="./src/img/icons/building.svg"
+                          src="../UISite/images/icons/building.svg"
                           alt="building"
                         />164 номера, 2 бассейна, 2 бара
                       </p>
@@ -847,7 +889,10 @@
                   </div>
                   <div class="swiper-slide hotels__slide">
                     <div class="hotels__img">
-                      <img src="./src/img/hotels/hotels01.jpg" alt="Отель" />
+                      <img
+                        src="../UISite/images/hotels/hotels01.jpg"
+                        alt="Отель"
+                      />
                     </div>
                     <div class="hotels__title">
                       <h2>TO Coral Strand5</h2>
@@ -931,17 +976,19 @@
                       </p>
                       <p class="hotels__location">
                         <img
-                          src="./src/img/icons/location.svg"
+                          src="../UISite/images/icons/location.svg"
                           alt="location"
                         />Бо Валлон, ящик 400, остров Маэ, Сейшельские острова
                       </p>
                       <p class="hotels__beach">
-                        <img src="./src/img/icons/beach.svg" alt="Beach" />250м
-                        от моря
+                        <img
+                          src="../UISite/images/icons/beach.svg"
+                          alt="Beach"
+                        />250м от моря
                       </p>
                       <p class="hotels__building">
                         <img
-                          src="./src/img/icons/building.svg"
+                          src="../UISite/images/icons/building.svg"
                           alt="building"
                         />164 номера, 2 бассейна, 2 бара
                       </p>
@@ -955,7 +1002,10 @@
                   </div>
                   <div class="swiper-slide hotels__slide">
                     <div class="hotels__img">
-                      <img src="./src/img/hotels/hotels01.jpg" alt="Отель" />
+                      <img
+                        src="../UISite/images/hotels/hotels01.jpg"
+                        alt="Отель"
+                      />
                     </div>
                     <div class="hotels__title">
                       <h2>TO Coral Strand6</h2>
@@ -1039,17 +1089,19 @@
                       </p>
                       <p class="hotels__location">
                         <img
-                          src="./src/img/icons/location.svg"
+                          src="../UISite/images/icons/location.svg"
                           alt="location"
                         />Бо Валлон, ящик 400, остров Маэ, Сейшельские острова
                       </p>
                       <p class="hotels__beach">
-                        <img src="./src/img/icons/beach.svg" alt="Beach" />250м
-                        от моря
+                        <img
+                          src="../UISite/images/icons/beach.svg"
+                          alt="Beach"
+                        />250м от моря
                       </p>
                       <p class="hotels__building">
                         <img
-                          src="./src/img/icons/building.svg"
+                          src="../UISite/images/icons/building.svg"
                           alt="building"
                         />164 номера, 2 бассейна, 2 бара
                       </p>
@@ -1063,7 +1115,9 @@
                   </div>
                 </div>
               </div>
-              <button type="button" class="btn btn--more">Показать еще</button>
+              <button type="button" class="btn btn--more hotels__btn">
+                Показать еще
+              </button>
             </div>
           </div>
         </section>
@@ -1077,11 +1131,14 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide reviews__slide">
                 <div class="reviews__header">
-                  <img src="./src/img/avatar.png" alt="User" />
+                  <img src="../UISite/images/avatar.png" alt="User" />
                   <span>Комсомолка Нина</span>
                 </div>
                 <div class="reviews__body">
-                  <img src="./src/img/reviews/reviews01.png" alt="Отзыв" />
+                  <img
+                    src="../UISite/images/reviews/reviews01.png"
+                    alt="Отзыв"
+                  />
                 </div>
                 <div class="reviews__footer">
                   <p>
@@ -1093,11 +1150,14 @@
               </div>
               <div class="swiper-slide reviews__slide">
                 <div class="reviews__header">
-                  <img src="./src/img/avatar.png" alt="User" />
+                  <img src="../UISite/images/avatar.png" alt="User" />
                   <span>Комсомолка Нина</span>
                 </div>
                 <div class="reviews__body">
-                  <img src="./src/img/reviews/reviews01.png" alt="Отзыв" />
+                  <img
+                    src="../UISite/images/reviews/reviews01.png"
+                    alt="Отзыв"
+                  />
                 </div>
                 <div class="reviews__footer">
                   <p>
@@ -1109,11 +1169,14 @@
               </div>
               <div class="swiper-slide reviews__slide">
                 <div class="reviews__header">
-                  <img src="./src/img/avatar.png" alt="User" />
+                  <img src="../UISite/images/avatar.png" alt="User" />
                   <span>Комсомолка Нина</span>
                 </div>
                 <div class="reviews__body">
-                  <img src="./src/img/reviews/reviews01.png" alt="Отзыв" />
+                  <img
+                    src="../UISite/images/reviews/reviews01.png"
+                    alt="Отзыв"
+                  />
                 </div>
                 <div class="reviews__footer">
                   <p>
@@ -1125,11 +1188,14 @@
               </div>
               <div class="swiper-slide reviews__slide">
                 <div class="reviews__header">
-                  <img src="./src/img/avatar.png" alt="User" />
+                  <img src="../UISite/images/avatar.png" alt="User" />
                   <span>Комсомолка Нина</span>
                 </div>
                 <div class="reviews__body">
-                  <img src="./src/img/reviews/reviews01.png" alt="Отзыв" />
+                  <img
+                    src="../UISite/images/reviews/reviews01.png"
+                    alt="Отзыв"
+                  />
                 </div>
                 <div class="reviews__footer">
                   <p>
@@ -1141,11 +1207,14 @@
               </div>
               <div class="swiper-slide reviews__slide">
                 <div class="reviews__header">
-                  <img src="./src/img/avatar.png" alt="User" />
+                  <img src="../UISite/images/avatar.png" alt="User" />
                   <span>Комсомолка Нина</span>
                 </div>
                 <div class="reviews__body">
-                  <img src="./src/img/reviews/reviews01.png" alt="Отзыв" />
+                  <img
+                    src="../UISite/images/reviews/reviews01.png"
+                    alt="Отзыв"
+                  />
                 </div>
                 <div class="reviews__footer">
                   <p>
@@ -1157,11 +1226,14 @@
               </div>
               <div class="swiper-slide reviews__slide">
                 <div class="reviews__header">
-                  <img src="./src/img/avatar.png" alt="User" />
+                  <img src="../UISite/images/avatar.png" alt="User" />
                   <span>Комсомолка Нина</span>
                 </div>
                 <div class="reviews__body">
-                  <img src="./src/img/reviews/reviews01.png" alt="Отзыв" />
+                  <img
+                    src="../UISite/images/reviews/reviews01.png"
+                    alt="Отзыв"
+                  />
                 </div>
                 <div class="reviews__footer">
                   <p>
@@ -1173,11 +1245,14 @@
               </div>
               <div class="swiper-slide reviews__slide">
                 <div class="reviews__header">
-                  <img src="./src/img/avatar.png" alt="User" />
+                  <img src="../UISite/images/avatar.png" alt="User" />
                   <span>Комсомолка Нина</span>
                 </div>
                 <div class="reviews__body">
-                  <img src="./src/img/reviews/reviews01.png" alt="Отзыв" />
+                  <img
+                    src="../UISite/images/reviews/reviews01.png"
+                    alt="Отзыв"
+                  />
                 </div>
                 <div class="reviews__footer">
                   <p>
@@ -1202,7 +1277,9 @@
                       отель?
                     </span>
                     <span class="accordion__icon">
-                      <img src="./src/img/icons/accordion-btn.svg" alt="Close"
+                      <img
+                        src="../UISite/images/icons/accordion-btn.svg"
+                        alt="Close"
                     /></span>
                   </button>
                   <div class="accordion__content">
@@ -1221,7 +1298,7 @@
                     </span>
                     <span class="accordion__icon">
                       <img
-                        src="./src/img/icons/accordion-btn.svg"
+                        src="../UISite/images/icons/accordion-btn.svg"
                         alt="Close"
                       />
                     </span>
@@ -1242,7 +1319,7 @@
                     </span>
                     <span class="accordion__icon">
                       <img
-                        src="./src/img/icons/accordion-btn.svg"
+                        src="../UISite/images/icons/accordion-btn.svg"
                         alt="Close"
                       />
                     </span>
@@ -1262,7 +1339,7 @@
                     </span>
                     <span class="accordion__icon">
                       <img
-                        src="./src/img/icons/accordion-btn.svg"
+                        src="../UISite/images/icons/accordion-btn.svg"
                         alt="Close"
                       />
                     </span>
@@ -1282,7 +1359,7 @@
                     </span>
                     <span class="accordion__icon">
                       <img
-                        src="./src/img/icons/accordion-btn.svg"
+                        src="../UISite/images/icons/accordion-btn.svg"
                         alt="Close"
                       />
                     </span>
@@ -1302,7 +1379,7 @@
                     </span>
                     <span class="accordion__icon">
                       <img
-                        src="./src/img/icons/accordion-btn.svg"
+                        src="../UISite/images/icons/accordion-btn.svg"
                         alt="Close"
                       />
                     </span>
@@ -1338,9 +1415,6 @@
                   <a class="footer__link" href="#" target="_blank"
                     >Благодарности</a
                   >
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#" target="_blank">Отзывы</a>
                 </li>
                 <li class="footer__item">
                   <a class="footer__link" href="#" target="_blank"
@@ -1421,17 +1495,20 @@
             <div class="footer__col">
               <div class="socials">
                 <a href="#" class="socials__link">
-                  <img src="./src/img/icons/tg.svg" alt="Telegram" /> </a
+                  <img src="../UISite/images/icons/tg.svg" alt="Telegram" /> </a
                 ><a href="#" class="socials__link">
-                  <img src="./src/img/icons/vk.svg" alt="VK" /> </a
+                  <img src="../UISite/images/icons/vk.svg" alt="VK" /> </a
                 ><a href="#" class="socials__link">
-                  <img src="./src/img/icons/whatsapp.svg" alt="WhatsApp" /> </a
+                  <img
+                    src="../UISite/images/icons/whatsapp.svg"
+                    alt="WhatsApp"
+                  /> </a
                 ><a href="#" class="socials__link">
-                  <img src="./src/img/icons/viber.svg" alt="Viber" />
+                  <img src="../UISite/images/icons/viber.svg" alt="Viber" />
                 </a>
               </div>
               <a href="tel:+74951002334" class="footer__call">
-                <img src="./src/img/icons/call.svg" alt="Call" />
+                <img src="../UISite/images/icons/call.svg" alt="Call" />
                 <span>7 495 100 23 34</span>
               </a>
               <div class="footer__exchange">
@@ -1450,13 +1527,13 @@
               </select>
               <!-- <select class="lang" name="lang">
                 <option
-                  style="background-image: url('./src/img/icons/flag-ru.svg')"
+                  style="background-image: url('../UISite/images/icons/flag-ru.svg')"
                   value="RU"
                 >
-                  <img src="./src/img/logo.png" alt="" />
+                  <img src="../UISite/images/logo.png" alt="" />
                 </option>
                 <option
-                  style="background-image: url('./src/img/icons/flag-ru.svg')"
+                  style="background-image: url('../UISite/images/icons/flag-ru.svg')"
                   value="RU"
                 >
                   RU
@@ -1465,13 +1542,13 @@
             </div>
             <div class="footer__payment">
               <div class="footer__img">
-                <img src="./src/img/visa.png" alt="VISA" />
+                <img src="../UISite/images/visa.png" alt="VISA" />
               </div>
               <div class="footer__img">
-                <img src="./src/img/mastercard.png" alt="MASTERCARD" />
+                <img src="../UISite/images/mastercard.png" alt="MASTERCARD" />
               </div>
               <div class="footer__img">
-                <img src="./src/img/mir.png" alt="MIR" />
+                <img src="../UISite/images/mir.png" alt="MIR" />
               </div>
             </div>
             <p class="footer__copyright">
@@ -1483,6 +1560,62 @@
       </footer>
     </div>
 
-    <script type="module" src="./src/js/main.js"></script>
+    <div class="modals">
+      <div class="modals__request">
+        <h2 class="title">Оставить заявку</h2>
+        <form action="">
+          <button type="btn" class="modals__close">
+            <img src="./UISite/images/icons/close.svg" alt="Close" />
+          </button>
+          <label for="">
+            <input type="text" placeholder="Имя" />
+          </label>
+          <label for="">
+            <input type="text" placeholder="Телефон" />
+          </label>
+          <label for=""> <input type="text" placeholder="Почта" /></label>
+          <label for="">
+            <textarea name="" id="" placeholder="Комментарий"></textarea>
+          </label>
+          <label for="">
+            <input type="checkbox" />
+            <img src="./UISite/images/icons/offChecked.svg" alt="" />
+            <img src="./UISite/images/icons/onChecked.svg" alt="" />
+            Я даю согласие на обработку персональных данных
+          </label>
+          <button type="submit" class="btn btn--send">Отправить</button>
+        </form>
+      </div>
+      <div class="modals__review">
+        <h2 class="title">Оставить отзыв</h2>
+        <form action="">
+          <button type="btn" class="modals__close">
+            <img src="./UISite/images/icons/close.svg" alt="Close" />
+          </button>
+          <label for="">
+            <input type="text" placeholder="Имя" />
+          </label>
+          <label for="">
+            <input type="text" placeholder="Телефон" />
+          </label>
+          <label for=""> <input type="text" placeholder="Почта" /></label>
+          <label for="">
+            <textarea name="" id="" placeholder="Комментарий"></textarea>
+          </label>
+          <label for="">
+            <input type="checkbox" />
+            <img src="./UISite/images/icons/offChecked.svg" alt="" />
+            <img src="./UISite/images/icons/onChecked.svg" alt="" />
+            Я даю согласие на обработку персональных данных
+          </label>
+          <button type="submit" class="btn btn--send">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./UI/JQuery/js/jquery-2.2.4.min.js"></script>
+    <script src="./UI/select2/select2.js"></script>
+    <script src="./UI/swiper/swiper-bundle.min.js"></script>
+    <script src="./UISite/main.js"></script>
   </body>
 </html>
