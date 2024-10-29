@@ -4,9 +4,23 @@
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  &--slider {
+    display: flex;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+    .cards__item {
+      height: auto;
+      padding: 0;
+    }
+  }
   @include viewport-md {
     gap: 0;
     margin: -12px;
+    &--slider {
+      margin: 0;
+    }
   }
   @include viewport-lg {
   }
@@ -77,4 +91,19 @@
     border-radius: 8px;
     margin-top: auto;
   }
+}
+.swiper-cards {
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: 0;
+  @include viewport-lg {
+    max-width: 70%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 20%;
+    color: #fff;
+  }
+}
+.swiperCards {
 }

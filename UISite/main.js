@@ -14,7 +14,25 @@ menuMobile.addEventListener('click', function (e) {
   burger.classList.remove('open');
   menuMobile.classList.remove('open');
 });
-$('.lang').select2();
+const swiperCards = new Swiper('.swiper-cards', {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 16,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 const swiperPromo = new Swiper('.swiper-promo', {
   loop: true,
   pagination: {
@@ -63,7 +81,7 @@ const swiperReviews = new Swiper('.swiper-reviews', {
 const accordionItems = document.querySelectorAll('.accordion button');
 function toggleAccordion() {
   var itemToggle = this.getAttribute('aria-expanded');
-  for (var i = 0; i < items.length; i++) {
+  for (var i = 0; i < accordionItems.length; i++) {
     accordionItems[i].setAttribute('aria-expanded', 'false');
   }
   if (itemToggle === 'false') {
@@ -169,4 +187,22 @@ modalCLose.forEach((btn) => {
     modalRequest.classList.remove('open');
     modalReview.classList.remove('open');
   });
+});
+function formatState(state) {
+  if (!state.id) {
+    return state.text;
+  }
+  var $state = $(
+    '<span><img src="UISite/images/icons/flags/flag-' +
+      state.title.toLowerCase() +
+      '.svg"/> ' +
+      '</span>'
+  );
+  return $state;
+}
+
+$('.lang').select2({
+  minimumResultsForSearch: -1,
+  templateResult: formatState,
+  templateSelection: formatState,
 });

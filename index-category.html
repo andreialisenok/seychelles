@@ -19,25 +19,29 @@
         <div class="container">
           <div class="header__inner">
             <a href="tel:+74951002334" class="phone-mob">
-              <img src="../UISite/images/icons/phone.svg" alt="Phone" />
+              <img src="UISite/images/icons/phone.svg" alt="Phone" />
             </a>
-            <a href="./" class="logo">
-              <img src="../UISite/images/logo.png" alt="Seychelles" />
+            <a href="/" class="logo">
+              <img src="UISite/images/logo.png" alt="Seychelles" />
               <span>Seychelles-premium.travel</span>
             </a>
             <nav class="nav">
               <ul class="menudesktop">
                 <li class="menudesktop__item">
-                  <a href="./about.html" class="menudesktop__link">О нас</a>
+                  <a href="index-about.html" class="menudesktop__link">О нас</a>
                 </li>
                 <li class="menudesktop__item">
-                  <a href="./catalog.html" class="menudesktop__link">Услуги</a>
+                  <a href="index-catalog.html" class="menudesktop__link"
+                    >Услуги</a
+                  >
                 </li>
                 <li class="menudesktop__item">
-                  <a href="./category.html" class="menudesktop__link">Отели</a>
+                  <a href="index-category.html" class="menudesktop__link"
+                    >Отели</a
+                  >
                 </li>
                 <li class="menudesktop__item">
-                  <a href="./contacts.html" class="menudesktop__link"
+                  <a href="index-contacts.html" class="menudesktop__link"
                     >Контакты</a
                   >
                 </li>
@@ -48,83 +52,96 @@
               <button type="button" class="btn btn--call btn--white nav__call">
                 Заказать звонок
               </button>
-              <button type="button" class="basket">
-                <img src="../UISite/images/icons/basket.svg" alt="Basket" />
+              <a href="index-cart.html" type="button" class="basket">
+                <img src="UISite/images/icons/basket.svg" alt="Basket" />
                 <span>1</span>
-              </button>
+              </a>
               <button type="button" class="burger">
                 <span></span>
                 <span></span>
                 <span></span>
               </button>
-              <select class="lang lang--header" name="lang">
-                <option value="RU">RU</option>
-                <option value="ENG">ENG</option>
+              <select
+                class="lang lang--header"
+                name="lang"
+                title="lang"
+                onchange="window.location.href=this.value"
+              >
+                <option
+                  value="https://seychelles-premium.travel"
+                  selected
+                  title="ru"
+                ></option>
+                <option
+                  value="https://en.seychelles-premium.travel"
+                  title="en"
+                ></option>
               </select>
               <div class="menumobile">
                 <div class="menumobile__wrap">
                   <div class="menumobile__header">
-                    <a href="#" class="menumobile__order">
+                    <a href="index-cart.html" class="menumobile__order">
                       Заказы
                       <span>1</span>
                     </a>
-
-                    <select class="lang" name="lang">
-                      <option value="RU">RU</option>
-                      <option value="ENG">ENG</option>
+                    <select
+                      class="lang"
+                      name="lang"
+                      title="lang"
+                      onchange="location.href=this.value"
+                    >
+                      <option value="#1" selected title="ru"></option>
+                      <option value="#2" title="en"></option>
                     </select>
                   </div>
                   <div class="menumobile__body">
                     <ul class="menumobile__services">
                       <li>
-                        <a href="./category.html">
+                        <a href="category.html">
                           <img
-                            src="../UISite/images/icons/hotel-dark.svg"
+                            src="UISite/images/icons/hotel.svg"
                             alt="Hotel"
                           />
                           Отели
                         </a>
                       </li>
                       <li>
-                        <a href="./category.html"
-                          ><img
-                            src="../UISite/images/icons/cars-dark.svg"
-                            alt="Авто"
-                          />
+                        <a href="category.html"
+                          ><img src="UISite/images/icons/cars.svg" alt="Авто" />
                           Авто</a
                         >
                       </li>
                       <li>
-                        <a href="./category.html"
+                        <a href="category.html"
                           ><img
-                            src="../UISite/images/icons/airplane-dark.svg"
+                            src="UISite/images/icons/airplane.svg"
                             alt="Самолеты / Вертолёты"
                           />
                           Самолеты / Вертолёты</a
                         >
                       </li>
                       <li>
-                        <a href="./category.html"
+                        <a href="category.html"
                           ><img
-                            src="../UISite/images/icons/yacht-dark.svg"
+                            src="UISite/images/icons/yacht.svg"
                             alt="Яхты / Катамараны"
                           />
                           Яхты / Катамараны</a
                         >
                       </li>
                       <li>
-                        <a href="./category.html"
+                        <a href="category.html"
                           ><img
-                            src="../UISite/images/icons/tour-dark.svg"
+                            src="UISite/images/icons/tour.svg"
                             alt="Авторские туры"
                           />
                           Авторские туры</a
                         >
                       </li>
                       <li>
-                        <a href="./category.html"
+                        <a href="category.html"
                           ><img
-                            src="../UISite/images/icons/excursion-dark.svg"
+                            src="UISite/images/icons/excursion.svg"
                             alt="Экскурсии"
                           />
                           Экскурсии</a
@@ -133,13 +150,13 @@
                     </ul>
                     <ul class="menumobile__pages">
                       <li>
-                        <a href="./about.html">О нас</a>
+                        <a href="about.html">О нас</a>
                       </li>
                       <li>
-                        <a href="./category.html">Отели</a>
+                        <a href="category.html">Отели</a>
                       </li>
                       <li>
-                        <a href="./contacts.html">Контакты</a>
+                        <a href="contacts.html">Контакты</a>
                       </li>
                     </ul>
                   </div>
@@ -151,22 +168,19 @@
                       <div class="socials">
                         <a href="#" class="socials__link">
                           <img
-                            src="../UISite/images/icons/tg.svg"
+                            src="UISite/images/icons/tg.svg"
                             alt="Telegram"
                           /> </a
                         ><a href="#" class="socials__link">
-                          <img
-                            src="../UISite/images/icons/vk.svg"
-                            alt="VK"
-                          /> </a
+                          <img src="UISite/images/icons/vk.svg" alt="VK" /> </a
                         ><a href="#" class="socials__link">
                           <img
-                            src="../UISite/images/icons/whatsapp.svg"
+                            src="UISite/images/icons/whatsapp.svg"
                             alt="WhatsApp"
                           /> </a
                         ><a href="#" class="socials__link">
                           <img
-                            src="../UISite/images/icons/viber.svg"
+                            src="UISite/images/icons/viber.svg"
                             alt="Viber"
                           />
                         </a>
@@ -182,7 +196,7 @@
           </div>
         </div>
       </header>
-      <div class="main">
+      <main class="main">
         <section class="breadcrumbs">
           <div class="container">
             <div class="breadcrumbs__row">
@@ -250,7 +264,6 @@
             </div>
           </div>
         </section>
-
         <section class="category">
           <div class="container">
             <div class="category__inner">
@@ -784,14 +797,14 @@
                   </button>
                   <button
                     type="button"
-                    class="description__btn "
+                    class="description__btn"
                     data-tab-target="#complement"
                   >
                     Дополнительно
                   </button>
                   <button
                     type="button"
-                    class="description__btn "
+                    class="description__btn"
                     data-tab-target="#review"
                   >
                     Отзывы 3
@@ -1005,7 +1018,6 @@
             </div>
           </div>
         </section>
-
         <section class="accordion">
           <div class="container">
             <div class="accordion__inner">
@@ -1137,7 +1149,7 @@
             </div>
           </div>
         </section>
-      </div>
+      </main>
       <footer class="footer">
         <div class="container">
           <div class="footer__inner">
@@ -1156,9 +1168,6 @@
                   <a class="footer__link" href="#" target="_blank"
                     >Благодарности</a
                   >
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#" target="_blank">Отзывы</a>
                 </li>
                 <li class="footer__item">
                   <a class="footer__link" href="#" target="_blank"
@@ -1239,20 +1248,20 @@
             <div class="footer__col">
               <div class="socials">
                 <a href="#" class="socials__link">
-                  <img src="../UISite/images/icons/tg.svg" alt="Telegram" /> </a
+                  <img src="UISite/images/icons/tg.svg" alt="Telegram" /> </a
                 ><a href="#" class="socials__link">
-                  <img src="../UISite/images/icons/vk.svg" alt="VK" /> </a
+                  <img src="UISite/images/icons/vk.svg" alt="VK" /> </a
                 ><a href="#" class="socials__link">
                   <img
-                    src="../UISite/images/icons/whatsapp.svg"
+                    src="UISite/images/icons/whatsapp.svg"
                     alt="WhatsApp"
                   /> </a
                 ><a href="#" class="socials__link">
-                  <img src="../UISite/images/icons/viber.svg" alt="Viber" />
+                  <img src="UISite/images/icons/viber.svg" alt="Viber" />
                 </a>
               </div>
               <a href="tel:+74951002334" class="footer__call">
-                <img src="../UISite/images/icons/call.svg" alt="Call" />
+                <img src="UISite/images/icons/call.svg" alt="Call" />
                 <span>7 495 100 23 34</span>
               </a>
               <div class="footer__exchange">
@@ -1265,34 +1274,32 @@
                   <span>97,37</span>
                 </p>
               </div>
-              <select class="lang" name="lang">
-                <option value="RU">RU</option>
-                <option value="ENG">ENG</option>
+              <select
+                class="lang lang--header"
+                name="lang"
+                title="lang"
+                onchange="window.location.href=this.value"
+              >
+                <option
+                  value="https://seychelles-premium.travel"
+                  selected
+                  title="ru"
+                ></option>
+                <option
+                  value="https://en.seychelles-premium.travel"
+                  title="en"
+                ></option>
               </select>
-              <!-- <select class="lang" name="lang">
-                <option
-                  style="background-image: url('../UISite/images/icons/flag-ru.svg')"
-                  value="RU"
-                >
-                  <img src="../UISite/images/logo.png" alt="" />
-                </option>
-                <option
-                  style="background-image: url('../UISite/images/icons/flag-ru.svg')"
-                  value="RU"
-                >
-                  RU
-                </option>
-              </select> -->
             </div>
             <div class="footer__payment">
               <div class="footer__img">
-                <img src="../UISite/images/visa.png" alt="VISA" />
+                <img src="UISite/images/visa.png" alt="VISA" />
               </div>
               <div class="footer__img">
-                <img src="../UISite/images/mastercard.png" alt="MASTERCARD" />
+                <img src="UISite/images/mastercard.png" alt="MASTERCARD" />
               </div>
               <div class="footer__img">
-                <img src="../UISite/images/mir.png" alt="MIR" />
+                <img src="UISite/images/mir.png" alt="MIR" />
               </div>
             </div>
             <p class="footer__copyright">
@@ -1304,6 +1311,91 @@
       </footer>
     </div>
 
+    <div class="modals">
+      <div class="modals__request">
+        <h2 class="title">Оставить заявку</h2>
+        <form action="">
+          <button type="btn" class="modals__close">
+            <img src="./UISite/images/icons/close.svg" alt="Close" />
+          </button>
+          <label for="">
+            <input type="text" placeholder="Имя" />
+          </label>
+          <label for="">
+            <input type="text" placeholder="Телефон" />
+          </label>
+          <label for=""> <input type="text" placeholder="Почта" /></label>
+          <label for="">
+            <textarea name="" id="" placeholder="Комментарий"></textarea>
+          </label>
+          <label for="ckeckId">
+            <input type="checkbox" id="ckeckId" />
+            <img src="./UISite/images/icons/offChecked.svg" alt="" />
+            <img src="./UISite/images/icons/onChecked.svg" alt="" />
+            Я даю согласие на обработку персональных данных
+          </label>
+          <button type="submit" class="btn btn--send">Отправить</button>
+        </form>
+      </div>
+      <div class="modals__review">
+        <h2 class="title">Оставить отзыв</h2>
+        <form action="">
+          <button type="btn" class="modals__close">
+            <img src="./UISite/images/icons/close.svg" alt="Close" />
+          </button>
+          <label for="">
+            <input type="text" placeholder="Имя" />
+          </label>
+          <label for="">
+            <input type="text" placeholder="Телефон" />
+          </label>
+          <label for=""> <input type="text" placeholder="Почта" /></label>
+          <label for="">
+            <textarea name="" id="" placeholder="Комментарий"></textarea>
+          </label>
+          <label for="">
+            <input type="checkbox" />
+            <img src="./UISite/images/icons/offChecked.svg" alt="" />
+            <img src="./UISite/images/icons/onChecked.svg" alt="" />
+            Я даю согласие на обработку персональных данных
+          </label>
+          <button type="submit" class="btn btn--send">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="order-bottom">
+      <div class="order-bottom__wrap">
+        <div class="left">
+          <div class="img">
+            <img src="UISite/images/hotels/hotels01.jpg" alt="" />
+          </div>
+          <div class="review">
+            <h3>Coral Standard Room</h3>
+            <p>
+              <span>
+                <img
+                  src="../UISite/images/icons/stars-white.svg"
+                  alt="Reviews"
+                />
+                4.5
+              </span>
+              <span>16 отзывов</span>
+            </p>
+          </div>
+          <p class="date">
+            <span>16.05.24 - 24.05.24</span>
+            <span>2 чел</span>
+          </p>
+        </div>
+        <div class="right">
+          <span>430 €</span>
+          <button type="button" class="btn btn--order right__btn">
+            Корзина
+          </button>
+        </div>
+      </div>
+    </div>
     <script src="./UI/JQuery/js/jquery-2.2.4.min.js"></script>
     <script src="./UI/select2/select2.js"></script>
     <script src="./UI/swiper/swiper-bundle.min.js"></script>

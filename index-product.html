@@ -22,25 +22,29 @@
         <div class="container">
           <div class="header__inner">
             <a href="tel:+74951002334" class="phone-mob">
-              <img src="../UISite/images/icons/phone.svg" alt="Phone" />
+              <img src="UISite/images/icons/phone.svg" alt="Phone" />
             </a>
-            <a href="./" class="logo">
-              <img src="../UISite/images/logo.png" alt="Seychelles" />
+            <a href="/" class="logo">
+              <img src="UISite/images/logo.png" alt="Seychelles" />
               <span>Seychelles-premium.travel</span>
             </a>
             <nav class="nav">
               <ul class="menudesktop">
                 <li class="menudesktop__item">
-                  <a href="./about.html" class="menudesktop__link">О нас</a>
+                  <a href="index-about.html" class="menudesktop__link">О нас</a>
                 </li>
                 <li class="menudesktop__item">
-                  <a href="./catalog.html" class="menudesktop__link">Услуги</a>
+                  <a href="index-catalog.html" class="menudesktop__link"
+                    >Услуги</a
+                  >
                 </li>
                 <li class="menudesktop__item">
-                  <a href="./category.html" class="menudesktop__link">Отели</a>
+                  <a href="index-category.html" class="menudesktop__link"
+                    >Отели</a
+                  >
                 </li>
                 <li class="menudesktop__item">
-                  <a href="./contacts.html" class="menudesktop__link"
+                  <a href="index-contacts.html" class="menudesktop__link"
                     >Контакты</a
                   >
                 </li>
@@ -51,83 +55,96 @@
               <button type="button" class="btn btn--call btn--white nav__call">
                 Заказать звонок
               </button>
-              <button type="button" class="basket">
-                <img src="../UISite/images/icons/basket.svg" alt="Basket" />
+              <a href="index-cart.html" type="button" class="basket">
+                <img src="UISite/images/icons/basket.svg" alt="Basket" />
                 <span>1</span>
-              </button>
+              </a>
               <button type="button" class="burger">
                 <span></span>
                 <span></span>
                 <span></span>
               </button>
-              <select class="lang lang--header" name="lang">
-                <option value="RU">RU</option>
-                <option value="ENG">ENG</option>
+              <select
+                class="lang lang--header"
+                name="lang"
+                title="lang"
+                onchange="window.location.href=this.value"
+              >
+                <option
+                  value="https://seychelles-premium.travel"
+                  selected
+                  title="ru"
+                ></option>
+                <option
+                  value="https://en.seychelles-premium.travel"
+                  title="en"
+                ></option>
               </select>
               <div class="menumobile">
                 <div class="menumobile__wrap">
                   <div class="menumobile__header">
-                    <a href="#" class="menumobile__order">
+                    <a href="index-cart.html" class="menumobile__order">
                       Заказы
                       <span>1</span>
                     </a>
-
-                    <select class="lang" name="lang">
-                      <option value="RU">RU</option>
-                      <option value="ENG">ENG</option>
+                    <select
+                      class="lang"
+                      name="lang"
+                      title="lang"
+                      onchange="location.href=this.value"
+                    >
+                      <option value="#1" selected title="ru"></option>
+                      <option value="#2" title="en"></option>
                     </select>
                   </div>
                   <div class="menumobile__body">
                     <ul class="menumobile__services">
                       <li>
-                        <a href="./category.html">
+                        <a href="category.html">
                           <img
-                            src="../UISite/images/icons/hotel-dark.svg"
+                            src="UISite/images/icons/hotel.svg"
                             alt="Hotel"
                           />
                           Отели
                         </a>
                       </li>
                       <li>
-                        <a href="./category.html"
-                          ><img
-                            src="../UISite/images/icons/cars-dark.svg"
-                            alt="Авто"
-                          />
+                        <a href="category.html"
+                          ><img src="UISite/images/icons/cars.svg" alt="Авто" />
                           Авто</a
                         >
                       </li>
                       <li>
-                        <a href="./category.html"
+                        <a href="category.html"
                           ><img
-                            src="../UISite/images/icons/airplane-dark.svg"
+                            src="UISite/images/icons/airplane.svg"
                             alt="Самолеты / Вертолёты"
                           />
                           Самолеты / Вертолёты</a
                         >
                       </li>
                       <li>
-                        <a href="./category.html"
+                        <a href="category.html"
                           ><img
-                            src="../UISite/images/icons/yacht-dark.svg"
+                            src="UISite/images/icons/yacht.svg"
                             alt="Яхты / Катамараны"
                           />
                           Яхты / Катамараны</a
                         >
                       </li>
                       <li>
-                        <a href="./category.html"
+                        <a href="category.html"
                           ><img
-                            src="../UISite/images/icons/tour-dark.svg"
+                            src="UISite/images/icons/tour.svg"
                             alt="Авторские туры"
                           />
                           Авторские туры</a
                         >
                       </li>
                       <li>
-                        <a href="./category.html"
+                        <a href="category.html"
                           ><img
-                            src="../UISite/images/icons/excursion-dark.svg"
+                            src="UISite/images/icons/excursion.svg"
                             alt="Экскурсии"
                           />
                           Экскурсии</a
@@ -136,13 +153,13 @@
                     </ul>
                     <ul class="menumobile__pages">
                       <li>
-                        <a href="./about.html">О нас</a>
+                        <a href="about.html">О нас</a>
                       </li>
                       <li>
-                        <a href="./category.html">Отели</a>
+                        <a href="category.html">Отели</a>
                       </li>
                       <li>
-                        <a href="./contacts.html">Контакты</a>
+                        <a href="contacts.html">Контакты</a>
                       </li>
                     </ul>
                   </div>
@@ -154,22 +171,19 @@
                       <div class="socials">
                         <a href="#" class="socials__link">
                           <img
-                            src="../UISite/images/icons/tg.svg"
+                            src="UISite/images/icons/tg.svg"
                             alt="Telegram"
                           /> </a
                         ><a href="#" class="socials__link">
-                          <img
-                            src="../UISite/images/icons/vk.svg"
-                            alt="VK"
-                          /> </a
+                          <img src="UISite/images/icons/vk.svg" alt="VK" /> </a
                         ><a href="#" class="socials__link">
                           <img
-                            src="../UISite/images/icons/whatsapp.svg"
+                            src="UISite/images/icons/whatsapp.svg"
                             alt="WhatsApp"
                           /> </a
                         ><a href="#" class="socials__link">
                           <img
-                            src="../UISite/images/icons/viber.svg"
+                            src="UISite/images/icons/viber.svg"
                             alt="Viber"
                           />
                         </a>
@@ -185,7 +199,7 @@
           </div>
         </div>
       </header>
-      <div class="main">
+      <main class="main">
         <section class="breadcrumbs">
           <div class="container">
             <div class="breadcrumbs__row">
@@ -253,12 +267,293 @@
             </div>
           </div>
         </section>
-
-        <section class="category">
+        <section class="product">
           <div class="container">
-            <div class="category__inner">
-              <h2 class="title category__header">
-                Название отеля/авто/экскурсии и тд
+            <div class="product__row">
+              <div class="product__inner">
+                <h2 class="title product__header">Номер Люкс</h2>
+                <div class="subhead">
+                  <p class="subhead__review">
+                    <span>
+                      <img
+                        src="../UISite/images/icons/stars-white.svg"
+                        alt="Reviews"
+                      />
+                      4.5
+                    </span>
+                    <span>16 отзывов</span>
+                  </p>
+                  <p class="subhead__location">
+                    <img
+                      src="../UISite/images/icons/location.svg"
+                      alt="location"
+                    />Бо Валлон, ящик 400, остров Маэ, Сейшельские острова
+                  </p>
+                  <p class="subhead__beach">
+                    <img
+                      src="../UISite/images/icons/beach.svg"
+                      alt="Beach"
+                    />250м от моря
+                  </p>
+                </div>
+                <div class="product__item">
+                  <div class="category__img">
+                    <img
+                      src="../UISite/images/hotels/hotels01.jpg"
+                      alt="Отель"
+                    />
+                  </div>
+
+                  <p class="category__text">
+                    Современный дизайн номера, оформленный в пастельных тонах,
+                    располагает к отдыху после активного дня, проведенного на
+                    свежем воздухе. Ванная комната оборудована душем, феном и
+                    индивидуальными туалетными принадлежностями. Просторный
+                    балкон с видом на тенистый сад отеля — лучшее место для
+                    теплого летнего утра на Сейшельских островах. В гостевом
+                    номере могут разместиться 2 взрослых или 1 взрослый и 1
+                    ребенок. Дополнительная кровать не предоставляется.
+                  </p>
+                  <button type="button" class="category__btn">
+                    Подробнее...
+                  </button>
+                </div>
+                <div class="description">
+                  <h2 class="title">Описание номера</h2>
+                  <div class="description__btns">
+                    <button
+                      type="button"
+                      class="description__btn active"
+                      data-tab-target="#general"
+                    >
+                      Общее
+                    </button>
+                    <button
+                      type="button"
+                      class="description__btn"
+                      data-tab-target="#complement"
+                    >
+                      Дополнительно
+                    </button>
+                    <button
+                      type="button"
+                      class="description__btn"
+                      data-tab-target="#review"
+                    >
+                      Отзывы 3
+                    </button>
+                  </div>
+                  <div class="description__content">
+                    <div
+                      id="general"
+                      class="description__general active"
+                      data-tab-content
+                    >
+                      <ul>
+                        <li>
+                          <p>Общее</p>
+                          <p>
+                            <span>Дата основания :2014 </span>
+                            <span
+                              >Общая площадь : 164 комнат, от 24 до 117 м2</span
+                            >
+                          </p>
+                        </li>
+                        <li>
+                          <p>Расположение</p>
+                          <p>
+                            <span>Город: Mahe</span>
+                            <span
+                              >В 3 км от города Mauritius North West Coast. В 3
+                              км от центра города Mauritius North West
+                              Coast</span
+                            >
+                            <span>В 42 км от аэропорта Mauritius-MRU</span>
+                          </p>
+                        </li>
+                        <li>
+                          <p>В отеле</p>
+                          <p>
+                            <span>Бунгало: 15 (этажей: 3, лифтов: Нет)</span>
+                            <span
+                              >Рестораны: 5 (из них ресторанов а’ля карт:
+                              2)</span
+                            >
+                            <span>Бары: 2</span>
+                            <span>Комнаты для переговоров: 5</span>
+                          </p>
+                        </li>
+                        <li>
+                          <p>Бассейны для взрослых: 2</p>
+                          <p>
+                            <span>Открытый Бассейн</span>
+                            <span>Открытый Бассейн</span>
+                          </p>
+                        </li>
+                        <li>
+                          <p>Пляж</p>
+                          <p>
+                            <span>До пляжа, 150 м </span>
+                            <span>
+                              Собственный песчаный пляж на территории
+                              общественного пляжа, протяженность 600 м
+                            </span>
+                            <span> Песчаный пляж </span>
+                            <span> Песчаный вход в воду </span>
+                            <span>Зонты</span>
+                            <span>Шезлонги</span>
+                            <span> Пляжные полотенца </span>
+                            <span> Павильон на пляже (Платно) </span>
+                            <span> Душ на пляже </span>
+                            <span> Питание и напитки на пляже (Платно)</span>
+                          </p>
+                        </li>
+                        <li>
+                          <p>Особенности</p>
+                          <p>
+                            <span
+                              >Депозит при заселении: Кредитная карта, Наличные,
+                              Документы</span
+                            >
+                          </p>
+                        </li>
+                        <li>
+                          <p>Контакты</p>
+                          <p>
+                            <span>Телефон: +248 429 10 01 </span>
+                            <span>Сайт: coralstrand.com</span>
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div
+                      id="complement"
+                      class="description__complement"
+                      data-tab-content
+                    >
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur error aut, est nobis blanditiis pariatur
+                        libero expedita corrupti placeat. Voluptatum quia
+                        repellat debitis natus ullam omnis laudantium iusto ea
+                        laboriosam eveniet maiores, consequatur possimus
+                        cupiditate illo perferendis quas inventore enim porro
+                        suscipit! Ipsum, deleniti! Fugit eligendi, animi vero
+                        doloribus error, officiis aliquid, reiciendis eius
+                        recusandae quo voluptas! Beatae porro autem hic
+                        recusandae rem consequatur rerum fugit. Voluptas, illo.
+                        Autem id fuga possimus est fugit, excepturi saepe aut
+                        hic cumque culpa, reiciendis commodi nesciunt quia
+                        necessitatibus libero molestiae ducimus nihil ipsum
+                        facere illum, consectetur eaque nemo aperiam error. Quae
+                        animi quaerat architecto repellat minus, itaque unde
+                        nulla consectetur dignissimos doloribus obcaecati.
+                        Provident, libero iure! Exercitationem enim beatae totam
+                        rerum natus unde voluptatibus odio, recusandae porro
+                        obcaecati atque consectetur doloribus voluptate,
+                        corporis architecto optio impedit nihil? Consectetur est
+                        et rem recusandae architecto quidem nihil enim
+                        doloremque accusantium eveniet, sunt libero omnis
+                        voluptatem beatae eius molestiae velit? Facere sint
+                        dolores, consequuntur veniam magnam ipsam sit minima
+                        provident perferendis enim esse ducimus similique vitae
+                        quae unde a obcaecati laborum. Id cupiditate, qui
+                        exercitationem nisi beatae tempore aliquam? Adipisci
+                        fugit alias odit, minus eveniet eius vero, id non ipsam,
+                        deserunt unde quaerat quas at. Corrupti, dicta.
+                        Inventore, eveniet minus sunt possimus vitae fuga
+                        nesciunt voluptas rerum architecto dolor aliquam sint
+                        culpa magnam quae nemo in? Eaque reiciendis placeat nam
+                        dolore officia, quis, accusantium corrupti itaque,
+                        adipisci magnam totam dicta voluptas beatae vitae iusto.
+                        A cum quisquam beatae aut facere, quod pariatur maiores
+                        ut? Laborum animi asperiores recusandae velit porro
+                        provident cum molestias officia, voluptates natus soluta
+                        harum, illo nobis tempora? Illum, ad ipsum voluptatem
+                        nulla at minus debitis vel eos architecto aspernatur,
+                        itaque voluptas, amet eveniet neque nisi ratione
+                        temporibus a odio excepturi hic saepe aliquam
+                        repudiandae. Perferendis obcaecati laboriosam
+                        dignissimos nobis eius? Quibusdam, voluptate?
+                      </p>
+                    </div>
+                    <div
+                      id="review"
+                      class="description__reviews"
+                      data-tab-content
+                    >
+                      <ul>
+                        <li>
+                          <img
+                            src="../UISite/images/hotels/hotels01.jpg"
+                            alt=""
+                          />
+                          <div>
+                            <p>
+                              Дмитрий Д.
+                              <img
+                                src="../UISite/images/icons/stars-white.svg"
+                                alt=""
+                              />
+                              5
+                            </p>
+                            <p>
+                              Понравилось все: персонал, обстановка, вид с
+                              балкона на фонтаны! Менеджер быстро решил проблему
+                              с потерянным паспортом. Отличный сервис!
+                            </p>
+                          </div>
+                        </li>
+                        <li>
+                          <img
+                            src="../UISite/images/hotels/hotels01.jpg"
+                            alt=""
+                          />
+                          <div>
+                            <p>
+                              Дмитрий Д.
+                              <img
+                                src="../UISite/images/icons/stars-white.svg"
+                                alt=""
+                              />
+                              5
+                            </p>
+                            <p>
+                              Понравилось все: персонал, обстановка, вид с
+                              балкона на фонтаны! Менеджер быстро решил проблему
+                              с потерянным паспортом. Отличный сервис!
+                            </p>
+                          </div>
+                        </li>
+                        <li>
+                          <img
+                            src="../UISite/images/hotels/hotels01.jpg"
+                            alt=""
+                          />
+                          <div>
+                            <p>
+                              Дмитрий Д.
+                              <img
+                                src="../UISite/images/icons/stars-white.svg"
+                                alt=""
+                              />
+                              5
+                            </p>
+                            <p>
+                              Понравилось все: персонал, обстановка, вид с
+                              балкона на фонтаны! Менеджер быстро решил проблему
+                              с потерянным паспортом. Отличный сервис!
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                      <a href="">Написать отзыв</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__order">
                 <span
                   ><svg
                     width="14"
@@ -324,51 +619,50 @@
                     />
                   </svg>
                 </span>
-              </h2>
-              <div class="subhead">
-                <p class="subhead__review">
-                  <span>
-                    <img
-                      src="../UISite/images/icons/stars-white.svg"
-                      alt="Reviews"
-                    />
-                    4.5
-                  </span>
-                  <span>16 отзывов</span>
-                </p>
-                <p class="subhead__location">
-                  <img
-                    src="../UISite/images/icons/location.svg"
-                    alt="location"
-                  />Бо Валлон, ящик 400, остров Маэ, Сейшельские острова
-                </p>
-                <p class="subhead__beach">
-                  <img src="../UISite/images/icons/beach.svg" alt="Beach" />250м
-                  от моря
-                </p>
-              </div>
-              <div class="category__item">
-                <div class="category__img">
-                  <img src="../UISite/images/hotels/hotels01.jpg" alt="Отель" />
+                <h3>Coral Strand Smart Choice</h3>
+                <div class="price">
+                  <span>Цена от</span>
+                  <h4>430 €</h4>
                 </div>
-
-                <p class="category__text">
-                  Современный дизайн номера, оформленный в пастельных тонах,
-                  располагает к отдыху после активного дня, проведенного на
-                  свежем воздухе. Ванная комната оборудована душем, феном и
-                  индивидуальными туалетными принадлежностями. Просторный балкон
-                  с видом на тенистый сад отеля — лучшее место для теплого
-                  летнего утра на Сейшельских островах. В гостевом номере могут
-                  разместиться 2 взрослых или 1 взрослый и 1 ребенок.
-                  Дополнительная кровать не предоставляется.
-                </p>
-                <button type="button" class="category__btn">
-                  Подробнее...
-                </button>
+                <div class="sale">
+                  <img src="UISite/images/icons/precent.svg" alt="" />
+                  Доступно в рассрочку и кредит от 60 € в месяц
+                </div>
+                <div class="info">
+                  <p class="info__review">
+                    <span>
+                      <img
+                        src="../UISite/images/icons/stars-white.svg"
+                        alt="Reviews"
+                      />
+                      4.5
+                    </span>
+                    <span>16 отзывов</span>
+                  </p>
+                  <p class="info__location">
+                    <img
+                      src="../UISite/images/icons/location.svg"
+                      alt="location"
+                    />Бо Валлон, ящик 400, остров Маэ, Сейшельские острова
+                  </p>
+                  <p class="info__beach">
+                    <img
+                      src="../UISite/images/icons/beach.svg"
+                      alt="Beach"
+                    />250м от моря
+                  </p>
+                </div>
+                <button type="button" class="btn btn--order">Добавить</button>
               </div>
-              <h2 class="title">Номера/Машины/... и тд</h2>
-              <ul class="cards">
-                <li class="cards__item">
+            </div>
+          </div>
+        </section>
+        <section class="swiperCards">
+          <div class="container">
+            <h2 class="title product__header">Другие номера</h2>
+            <div class="swiper swiper-cards">
+              <ul class="swiper-wrapper cards cards--slider">
+                <li class="swiper-slide cards__item">
                   <div class="cards__img">
                     <img
                       src="../UISite/images/hotels/hotels01.jpg"
@@ -449,7 +743,7 @@
                   </p>
                   <a class="cards__link" href="#">Подробнее</a>
                 </li>
-                <li class="cards__item">
+                <li class="swiper-slide cards__item">
                   <div class="cards__img">
                     <img
                       src="../UISite/images/hotels/hotels01.jpg"
@@ -531,7 +825,7 @@
                   </p>
                   <a class="cards__link" href="#">Подробнее</a>
                 </li>
-                <li class="cards__item">
+                <li class="swiper-slide cards__item">
                   <div class="cards__img">
                     <img
                       src="../UISite/images/hotels/hotels01.jpg"
@@ -610,7 +904,7 @@
                   <p class="cards__text">Бутик-отель Le Repaire</p>
                   <a class="cards__link" href="#">Подробнее</a>
                 </li>
-                <li class="cards__item">
+                <li class="swiper-slide cards__item">
                   <div class="cards__img">
                     <img
                       src="../UISite/images/hotels/hotels01.jpg"
@@ -692,7 +986,7 @@
                   </p>
                   <a class="cards__link" href="#">Подробнее</a>
                 </li>
-                <li class="cards__item">
+                <li class="swiper-slide cards__item">
                   <div class="cards__img">
                     <img
                       src="../UISite/images/hotels/hotels01.jpg"
@@ -775,240 +1069,11 @@
                   <a class="cards__link" href="#">Подробнее</a>
                 </li>
               </ul>
-              <div class="description">
-                <h2 class="title">Описание отеля</h2>
-                <div class="description__btns">
-                  <button
-                    type="button"
-                    class="description__btn active"
-                    data-tab-target="#general"
-                  >
-                    Общее
-                  </button>
-                  <button
-                    type="button"
-                    class="description__btn "
-                    data-tab-target="#complement"
-                  >
-                    Дополнительно
-                  </button>
-                  <button
-                    type="button"
-                    class="description__btn "
-                    data-tab-target="#review"
-                  >
-                    Отзывы 3
-                  </button>
-                </div>
-                <div class="description__content">
-                  <div
-                    id="general"
-                    class="description__general active"
-                    data-tab-content
-                  >
-                    <ul>
-                      <li>
-                        <p>Общее</p>
-                        <p>
-                          <span>Дата основания :2014 </span>
-                          <span
-                            >Общая площадь : 164 комнат, от 24 до 117 м2</span
-                          >
-                        </p>
-                      </li>
-                      <li>
-                        <p>Расположение</p>
-                        <p>
-                          <span>Город: Mahe</span>
-                          <span
-                            >В 3 км от города Mauritius North West Coast. В 3 км
-                            от центра города Mauritius North West Coast</span
-                          >
-                          <span>В 42 км от аэропорта Mauritius-MRU</span>
-                        </p>
-                      </li>
-                      <li>
-                        <p>В отеле</p>
-                        <p>
-                          <span>Бунгало: 15 (этажей: 3, лифтов: Нет)</span>
-                          <span
-                            >Рестораны: 5 (из них ресторанов а’ля карт: 2)</span
-                          >
-                          <span>Бары: 2</span>
-                          <span>Комнаты для переговоров: 5</span>
-                        </p>
-                      </li>
-                      <li>
-                        <p>Бассейны для взрослых: 2</p>
-                        <p>
-                          <span>Открытый Бассейн</span>
-                          <span>Открытый Бассейн</span>
-                        </p>
-                      </li>
-                      <li>
-                        <p>Пляж</p>
-                        <p>
-                          <span>До пляжа, 150 м </span>
-                          <span>
-                            Собственный песчаный пляж на территории
-                            общественного пляжа, протяженность 600 м
-                          </span>
-                          <span> Песчаный пляж </span>
-                          <span> Песчаный вход в воду </span>
-                          <span>Зонты</span>
-                          <span>Шезлонги</span>
-                          <span> Пляжные полотенца </span>
-                          <span> Павильон на пляже (Платно) </span>
-                          <span> Душ на пляже </span>
-                          <span> Питание и напитки на пляже (Платно)</span>
-                        </p>
-                      </li>
-                      <li>
-                        <p>Особенности</p>
-                        <p>
-                          <span
-                            >Депозит при заселении: Кредитная карта, Наличные,
-                            Документы</span
-                          >
-                        </p>
-                      </li>
-                      <li>
-                        <p>Контакты</p>
-                        <p>
-                          <span>Телефон: +248 429 10 01 </span>
-                          <span>Сайт: coralstrand.com</span>
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div
-                    id="complement"
-                    class="description__complement"
-                    data-tab-content
-                  >
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Consequuntur error aut, est nobis blanditiis pariatur
-                      libero expedita corrupti placeat. Voluptatum quia repellat
-                      debitis natus ullam omnis laudantium iusto ea laboriosam
-                      eveniet maiores, consequatur possimus cupiditate illo
-                      perferendis quas inventore enim porro suscipit! Ipsum,
-                      deleniti! Fugit eligendi, animi vero doloribus error,
-                      officiis aliquid, reiciendis eius recusandae quo voluptas!
-                      Beatae porro autem hic recusandae rem consequatur rerum
-                      fugit. Voluptas, illo. Autem id fuga possimus est fugit,
-                      excepturi saepe aut hic cumque culpa, reiciendis commodi
-                      nesciunt quia necessitatibus libero molestiae ducimus
-                      nihil ipsum facere illum, consectetur eaque nemo aperiam
-                      error. Quae animi quaerat architecto repellat minus,
-                      itaque unde nulla consectetur dignissimos doloribus
-                      obcaecati. Provident, libero iure! Exercitationem enim
-                      beatae totam rerum natus unde voluptatibus odio,
-                      recusandae porro obcaecati atque consectetur doloribus
-                      voluptate, corporis architecto optio impedit nihil?
-                      Consectetur est et rem recusandae architecto quidem nihil
-                      enim doloremque accusantium eveniet, sunt libero omnis
-                      voluptatem beatae eius molestiae velit? Facere sint
-                      dolores, consequuntur veniam magnam ipsam sit minima
-                      provident perferendis enim esse ducimus similique vitae
-                      quae unde a obcaecati laborum. Id cupiditate, qui
-                      exercitationem nisi beatae tempore aliquam? Adipisci fugit
-                      alias odit, minus eveniet eius vero, id non ipsam,
-                      deserunt unde quaerat quas at. Corrupti, dicta. Inventore,
-                      eveniet minus sunt possimus vitae fuga nesciunt voluptas
-                      rerum architecto dolor aliquam sint culpa magnam quae nemo
-                      in? Eaque reiciendis placeat nam dolore officia, quis,
-                      accusantium corrupti itaque, adipisci magnam totam dicta
-                      voluptas beatae vitae iusto. A cum quisquam beatae aut
-                      facere, quod pariatur maiores ut? Laborum animi asperiores
-                      recusandae velit porro provident cum molestias officia,
-                      voluptates natus soluta harum, illo nobis tempora? Illum,
-                      ad ipsum voluptatem nulla at minus debitis vel eos
-                      architecto aspernatur, itaque voluptas, amet eveniet neque
-                      nisi ratione temporibus a odio excepturi hic saepe aliquam
-                      repudiandae. Perferendis obcaecati laboriosam dignissimos
-                      nobis eius? Quibusdam, voluptate?
-                    </p>
-                  </div>
-                  <div
-                    id="review"
-                    class="description__reviews"
-                    data-tab-content
-                  >
-                    <ul>
-                      <li>
-                        <img
-                          src="../UISite/images/hotels/hotels01.jpg"
-                          alt=""
-                        />
-                        <div>
-                          <p>
-                            Дмитрий Д.
-                            <img
-                              src="../UISite/images/icons/stars-white.svg"
-                              alt=""
-                            />
-                            5
-                          </p>
-                          <p>
-                            Понравилось все: персонал, обстановка, вид с балкона
-                            на фонтаны! Менеджер быстро решил проблему с
-                            потерянным паспортом. Отличный сервис!
-                          </p>
-                        </div>
-                      </li>
-                      <li>
-                        <img
-                          src="../UISite/images/hotels/hotels01.jpg"
-                          alt=""
-                        />
-                        <div>
-                          <p>
-                            Дмитрий Д.
-                            <img
-                              src="../UISite/images/icons/stars-white.svg"
-                              alt=""
-                            />
-                            5
-                          </p>
-                          <p>
-                            Понравилось все: персонал, обстановка, вид с балкона
-                            на фонтаны! Менеджер быстро решил проблему с
-                            потерянным паспортом. Отличный сервис!
-                          </p>
-                        </div>
-                      </li>
-                      <li>
-                        <img
-                          src="../UISite/images/hotels/hotels01.jpg"
-                          alt=""
-                        />
-                        <div>
-                          <p>
-                            Дмитрий Д.
-                            <img
-                              src="../UISite/images/icons/stars-white.svg"
-                              alt=""
-                            />
-                            5
-                          </p>
-                          <p>
-                            Понравилось все: персонал, обстановка, вид с балкона
-                            на фонтаны! Менеджер быстро решил проблему с
-                            потерянным паспортом. Отличный сервис!
-                          </p>
-                        </div>
-                      </li>
-                    </ul>
-                    <a href="">Написать отзыв</a>
-                  </div>
-                </div>
-              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
           </div>
         </section>
-
         <section class="accordion">
           <div class="container">
             <div class="accordion__inner">
@@ -1140,7 +1205,7 @@
             </div>
           </div>
         </section>
-      </div>
+      </main>
       <footer class="footer">
         <div class="container">
           <div class="footer__inner">
@@ -1159,9 +1224,6 @@
                   <a class="footer__link" href="#" target="_blank"
                     >Благодарности</a
                   >
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#" target="_blank">Отзывы</a>
                 </li>
                 <li class="footer__item">
                   <a class="footer__link" href="#" target="_blank"
@@ -1242,20 +1304,20 @@
             <div class="footer__col">
               <div class="socials">
                 <a href="#" class="socials__link">
-                  <img src="../UISite/images/icons/tg.svg" alt="Telegram" /> </a
+                  <img src="UISite/images/icons/tg.svg" alt="Telegram" /> </a
                 ><a href="#" class="socials__link">
-                  <img src="../UISite/images/icons/vk.svg" alt="VK" /> </a
+                  <img src="UISite/images/icons/vk.svg" alt="VK" /> </a
                 ><a href="#" class="socials__link">
                   <img
-                    src="../UISite/images/icons/whatsapp.svg"
+                    src="UISite/images/icons/whatsapp.svg"
                     alt="WhatsApp"
                   /> </a
                 ><a href="#" class="socials__link">
-                  <img src="../UISite/images/icons/viber.svg" alt="Viber" />
+                  <img src="UISite/images/icons/viber.svg" alt="Viber" />
                 </a>
               </div>
               <a href="tel:+74951002334" class="footer__call">
-                <img src="../UISite/images/icons/call.svg" alt="Call" />
+                <img src="UISite/images/icons/call.svg" alt="Call" />
                 <span>7 495 100 23 34</span>
               </a>
               <div class="footer__exchange">
@@ -1268,34 +1330,32 @@
                   <span>97,37</span>
                 </p>
               </div>
-              <select class="lang" name="lang">
-                <option value="RU">RU</option>
-                <option value="ENG">ENG</option>
+              <select
+                class="lang lang--header"
+                name="lang"
+                title="lang"
+                onchange="window.location.href=this.value"
+              >
+                <option
+                  value="https://seychelles-premium.travel"
+                  selected
+                  title="ru"
+                ></option>
+                <option
+                  value="https://en.seychelles-premium.travel"
+                  title="en"
+                ></option>
               </select>
-              <!-- <select class="lang" name="lang">
-                <option
-                  style="background-image: url('../UISite/images/icons/flag-ru.svg')"
-                  value="RU"
-                >
-                  <img src="../UISite/images/logo.png" alt="" />
-                </option>
-                <option
-                  style="background-image: url('../UISite/images/icons/flag-ru.svg')"
-                  value="RU"
-                >
-                  RU
-                </option>
-              </select> -->
             </div>
             <div class="footer__payment">
               <div class="footer__img">
-                <img src="../UISite/images/visa.png" alt="VISA" />
+                <img src="UISite/images/visa.png" alt="VISA" />
               </div>
               <div class="footer__img">
-                <img src="../UISite/images/mastercard.png" alt="MASTERCARD" />
+                <img src="UISite/images/mastercard.png" alt="MASTERCARD" />
               </div>
               <div class="footer__img">
-                <img src="../UISite/images/mir.png" alt="MIR" />
+                <img src="UISite/images/mir.png" alt="MIR" />
               </div>
             </div>
             <p class="footer__copyright">
@@ -1307,6 +1367,88 @@
       </footer>
     </div>
 
+    <div class="modals">
+      <div class="modals__request">
+        <h2 class="title">Оставить заявку</h2>
+        <form action="">
+          <button type="btn" class="modals__close">
+            <img src="UISite/images/icons/close.svg" alt="Close" />
+          </button>
+          <label for="">
+            <input type="text" placeholder="Имя" />
+          </label>
+          <label for="">
+            <input type="text" placeholder="Телефон" />
+          </label>
+          <label for=""> <input type="text" placeholder="Почта" /></label>
+          <label for="">
+            <textarea name="" id="" placeholder="Комментарий"></textarea>
+          </label>
+          <label for="ckeckId">
+            <input type="checkbox" id="ckeckId" />
+            <img src="UISite/images/icons/offChecked.svg" alt="" />
+            <img src="UISite/images/icons/onChecked.svg" alt="" />
+            Я даю согласие на обработку персональных данных
+          </label>
+          <button type="submit" class="btn btn--send">Отправить</button>
+        </form>
+      </div>
+      <div class="modals__review">
+        <h2 class="title">Оставить отзыв</h2>
+        <form action="">
+          <button type="btn" class="modals__close">
+            <img src="UISite/images/icons/close.svg" alt="Close" />
+          </button>
+          <label for="">
+            <input type="text" placeholder="Имя" />
+          </label>
+          <label for="">
+            <input type="text" placeholder="Телефон" />
+          </label>
+          <label for=""> <input type="text" placeholder="Почта" /></label>
+          <label for="">
+            <textarea name="" id="" placeholder="Комментарий"></textarea>
+          </label>
+          <label for="">
+            <input type="checkbox" />
+            <img src="UISite/images/icons/offChecked.svg" alt="" />
+            <img src="UISite/images/icons/onChecked.svg" alt="" />
+            Я даю согласие на обработку персональных данных
+          </label>
+          <button type="submit" class="btn btn--send">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="order-bottom">
+      <div class="order-bottom__wrap">
+        <div class="left">
+          <div class="img">
+            <img src="UISite/images/hotels/hotels01.jpg" alt="" />
+          </div>
+          <div class="review">
+            <h3>Coral Standard Room</h3>
+            <p>
+              <span>
+                <img src="UISite/images/icons/stars-white.svg" alt="Reviews" />
+                4.5
+              </span>
+              <span>16 отзывов</span>
+            </p>
+          </div>
+          <p class="date">
+            <span>16.05.24 - 24.05.24</span>
+            <span>2 чел</span>
+          </p>
+        </div>
+        <div class="right">
+          <span>430 €</span>
+          <button type="button" class="btn btn--order right__btn">
+            Корзина
+          </button>
+        </div>
+      </div>
+    </div>
     <script src="../UI/JQuery/js/jquery-2.2.4.min.js"></script>
     <script src="../UI/select2/select2.js"></script>
     <script src="../UI/swiper/swiper-bundle.min.js"></script>
